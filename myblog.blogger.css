@@ -63,6 +63,10 @@ p {
     margin: 3px -2px;
 }
 
+.post-label-outline > a:hover {
+    text-decoration: none;
+}
+
 /*SIZES*/
 
 .p-10 {
