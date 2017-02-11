@@ -41,6 +41,16 @@ p {
     display: block;
 }
 
+.post-labels {
+    margin-top: 20px;
+    display: block;
+}
+
+.label {
+    background: #999;
+    color: white;
+}
+
 
 /*SIZES*/
 
