@@ -25,6 +25,10 @@ p {
     text-indent: 10px;
 }
 
+.post-title > a {
+    color: #4c4c4c;
+}
+
 .post-body {
     font-family: 'Noto Sans', Helvetica, sans-serif;
     font-size: 17px;
