@@ -43,7 +43,8 @@ p {
 
 .post-labels {
     margin-top: 20px;
-    display: block;
+    display: inline-block;
+    list-style: none;
 }
 
 .post-label {
