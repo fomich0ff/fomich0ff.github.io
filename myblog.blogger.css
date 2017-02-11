@@ -59,7 +59,8 @@ p {
 }
 
 .post-label-outline {
-    float: left;
+    float: right;
+    margin: 3px -2px;
 }
 
 /*SIZES*/
