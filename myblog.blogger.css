@@ -85,7 +85,7 @@ p {
     margin-top: 20px;
 }
 
-.table {
+/*.table {
     display: table;
     margin-bottom: 0px;
 }
@@ -94,7 +94,7 @@ p {
     float: none;
     display: table-cell;
     vertical-align: top;
-}
+}*/
 
 .boxshadow {
     position: relative;
