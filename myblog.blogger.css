@@ -44,8 +44,7 @@ p {
 
 .post-labels {
     margin-top: 20px;
-    display: inline-block;
-    list-style: none;
+    text-indent: 0px;
 }
 
 .post-label {
