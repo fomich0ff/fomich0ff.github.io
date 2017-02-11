@@ -78,7 +78,8 @@ p {
 
 a.home-link {
     color: #4c4c4c;
-    font-size: 24px;
+    font-size: 32px;
+    text-indent: 0px;
 }
 
 /*SIZES*/
