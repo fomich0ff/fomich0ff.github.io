@@ -48,6 +48,10 @@ p {
 
 .label {
     background: #999;
+    
+}
+
+.label > a {
     color: white;
 }
 
