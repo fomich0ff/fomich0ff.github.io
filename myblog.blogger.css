@@ -48,7 +48,7 @@ p {
 
 .label {
     background: #999;
-    
+    margin: 2px;
 }
 
 .label > a {
