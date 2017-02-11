@@ -20,13 +20,13 @@ p {
 
 .post-title {
     padding: 20px 0px;
-    font-family: $(post.title.font);
+    font-family: 'Ubuntu', sans-serif;
     font-size: 32px;
     text-indent: 10px;
 }
 
 .post-body {
-    font-family: $(post.body.font);
+    font-family: 'Noto Sans', Helvetica, sans-serif;
     font-size: 17px;
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
