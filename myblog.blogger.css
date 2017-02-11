@@ -46,14 +46,11 @@ p {
     display: block;
 }
 
-.label {
+.post-label {
     background: #EFEFEF;
     margin: 2px;
     border-radius: 2px;
     font-size: 14px;
-}
-
-.label > a {
     color: black;
 }
 
