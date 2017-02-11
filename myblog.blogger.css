@@ -58,6 +58,10 @@ p {
     white-space: nowrap;
 }
 
+.post-label-outline {
+    float: left;
+}
+
 /*SIZES*/
 
 .p-10 {
