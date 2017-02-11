@@ -67,6 +67,11 @@ p {
     text-decoration: none;
 }
 
+.post-label-outline > a:hover .post-label{
+    border: 1px solid black;
+    color: black;
+}
+
 /*SIZES*/
 
 .p-10 {
