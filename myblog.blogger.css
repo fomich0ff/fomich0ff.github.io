@@ -8,85 +8,85 @@
 */
 
 body {
-	background: #EFEFEF;
-	text-indent: 10px;
+    background: #EFEFEF;
+    text-indent: 10px;
 }
 
 p {
-	padding: 10px 0;
-	text-align: justify;
+    padding: 10px 0;
+    text-align: justify;
 }
 
 .post-title {
-	padding: 20px 0px;
-	font-family: $(post.title.font);
-	font-size: 32px;
-	text-indent: 10px;
+    padding: 20px 0px;
+    font-family: $(post.title.font);
+    font-size: 32px;
+    text-indent: 10px;
 }
 
 .post-body {
-	font-family: $(post.body.font);
-	font-size: 17px;
-	font-weight: 300;
-	-webkit-font-smoothing: antialiased;
-	line-height: 27px;
+    font-family: $(post.body.font);
+    font-size: 17px;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    line-height: 27px;
 }
 
 .date-header {
-	text-align: right;
+    text-align: right;
 }
 
 .date-header > span {
-	border-bottom: 1px solid #EFEFEF;
-	display: block;
+    border-bottom: 1px solid #EFEFEF;
+    display: block;
 }
 
 
 /*SIZES*/
 
 .p-10 {
-	padding: 10px;
+    padding: 10px;
 }
 
 .p-20 {
-	padding: 20px;
+    padding: 20px;
 }
 
 .p-30 {
-	padding: 30px;
+    padding: 30px;
 }
 
 .pb-20 {
-	padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .m-10 {
-	margin: 10px;
+    margin: 10px;
 }
 
 .mt-10 {
-	margin-top: 10px;
+    margin-top: 10px;
 }
 
 .mt-20 {
-	margin-top: 20px;
+    margin-top: 20px;
 }
 
 .table {
-	display: table;
-	padding-bottom: 0px;
+    display: table;
+    margin-bottom: 0px;
 }
 
 .table [class*="col-"] {
-	float: none;
-	display: table-cell;
-	vertical-align: top;
+    float: none;
+    display: table-cell;
+    vertical-align: top;
 }
 
 .boxshadow {
-	position: relative;
-	-moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
-	-webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
-	box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
-	background: white;
+    position: relative;
+    -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
+    background: white;
 }
