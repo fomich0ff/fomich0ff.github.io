@@ -89,3 +89,7 @@ p {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
     background: white;
 }
+
+.text-right {
+    text-align: right;
+}
