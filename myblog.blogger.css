@@ -76,6 +76,11 @@ p {
     color: black;
 }
 
+a.home-link {
+    color: #4c4c4c;
+    font-size: 24px;
+}
+
 /*SIZES*/
 
 .p-10 {
