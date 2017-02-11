@@ -82,6 +82,17 @@ a.home-link {
     text-indent: 0px;
 }
 
+.jump-link {
+    float: right;
+    margin-top: -32px;
+}
+
+.jump-link > a {
+    font-size: 24px;
+    color: #4c4c4c;
+    text-indent: 0px;
+}
+
 /*SIZES*/
 
 .p-10 {
