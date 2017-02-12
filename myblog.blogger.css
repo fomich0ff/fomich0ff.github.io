@@ -10,18 +10,20 @@
 
 body {
     background: #EFEFEF;
-    text-indent: 16px;
+    
 }
 
 p {
     padding: 10px 0;
     text-align: justify;
+    text-indent: 16px;
 }
 
 .post-title {
     padding: 20px 0px;
     font-family: 'Ubuntu', sans-serif;
     font-size: 32px;
+    text-indent: 16px;
 }
 
 .post-title > a {
@@ -34,6 +36,7 @@ p {
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
     line-height: 27px;
+    
 }
 
 .date-header {
@@ -96,6 +99,10 @@ a.home-link {
     text-indent: 0px;
     font-size: 32px;
     color: #8b8b8b;
+}
+
+.post-comment-link {
+    font-size: 24px;
 }
 
 /*SIZES*/
