@@ -103,14 +103,17 @@ a.home-link {
 
 .post-comment-link {
     font-size: 24px;
-    color: #8b8b8b;
-    text-decoration: none;
 }
 
 .comments-count {
     font-size: 18px;
     position: relative;
     top: -1px;
+}
+
+.comment-link {
+    color: #8b8b8b;
+    text-decoration: none;
 }
 
 /*SIZES*/
