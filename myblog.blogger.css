@@ -83,7 +83,7 @@ a.home-link {
 
 .jump-link {
     float: right;
-    margin-top: -32px;
+    /*margin-top: -32px;*/
 }
 
 .jump-link > a {
