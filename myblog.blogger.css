@@ -105,6 +105,10 @@ a.home-link {
     font-size: 24px;
 }
 
+.comments-count {
+    font-size: 18px;
+}
+
 /*SIZES*/
 
 .p-10 {
@@ -135,16 +139,6 @@ a.home-link {
     margin-top: 20px;
 }
 
-/*.table {
-    display: table;
-    margin-bottom: 0px;
-}
-
-.table [class*="col-"] {
-    float: none;
-    display: table-cell;
-    vertical-align: top;
-}*/
 
 .boxshadow {
     position: relative;
