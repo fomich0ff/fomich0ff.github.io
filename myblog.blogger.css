@@ -44,7 +44,7 @@ p {
 }
 
 .date-header > span {
-    border-bottom: 2px solid #8b8b8b;
+    border-bottom: 2px solid #ababab;
     display: block;
 }
 
@@ -54,7 +54,7 @@ p {
 }
 
 .post-label {
-    background: #ABABAB;
+    background: #EFEFEF;
     margin: 2px;
     border-radius: 5px;
     border: 1px solid #999;
