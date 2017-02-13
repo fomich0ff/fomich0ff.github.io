@@ -116,6 +116,10 @@ a.home-link {
     text-decoration: none;
 }
 
+a:hover {
+    color: black;
+}
+
 /*SIZES*/
 
 .p-10 {
