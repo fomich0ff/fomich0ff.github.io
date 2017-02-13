@@ -111,7 +111,7 @@ a.home-link {
     top: -1px;
 }
 
-.comment-link {
+.comment-link, .comment-link:hover {
     color: #8b8b8b;
     text-decoration: none;
 }
