@@ -44,7 +44,7 @@ p {
 }
 
 .date-header > span {
-    border-bottom: 1px solid #EFEFEF;
+    border-bottom: 2px solid #8b8b8b;
     display: block;
 }
 
