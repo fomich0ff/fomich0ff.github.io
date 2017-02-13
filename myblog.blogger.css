@@ -117,7 +117,7 @@ a.home-link {
 }
 
 a:hover {
-    color: black;
+    color: black; !important
 }
 
 /*SIZES*/
