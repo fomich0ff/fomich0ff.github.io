@@ -137,7 +137,7 @@ header {
     height: 150px;
 }
 
-.header .section {
+#header {
     padding: 0px;
 }
 
