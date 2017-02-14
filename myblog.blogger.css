@@ -177,6 +177,7 @@ header {
 
 .affix-top .affix-title {
     opacity: 0;
+    visibility: visible;
 }
 
 .affix .affix-title {
@@ -189,6 +190,8 @@ header {
     float: left;
     margin: 10px 5%;
     font-size: 24px;
+    opacity: 0;
+    visibility: hidden;
 }
 
 
