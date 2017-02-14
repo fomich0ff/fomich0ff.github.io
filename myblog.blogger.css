@@ -129,18 +129,14 @@ a:hover {
     color: black !important;
 }
 
-#nav {
-    -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
-    
-}
-
 #nav.affix {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 10;
+    -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
 }
 
 .navbar {
@@ -164,11 +160,15 @@ header {
     margin: 0px;
     width: 100%;
     background: #f8f8f8;
+    -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
 }
 
 .navbar-nav li a {
     color: #4c4c4c;
 }
+
 
 /*
 .navbar-nav li.active a {
