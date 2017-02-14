@@ -133,6 +133,10 @@ a:hover {
     padding: 0px;
 }
 
+.header {
+    height: 150px;
+    
+}
 /*SIZES*/
 
 .p-10 {
