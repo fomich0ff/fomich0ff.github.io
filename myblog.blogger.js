@@ -9,7 +9,7 @@ $(document).ready(() => {
         
         var html = "<li>";
         html += v.selected ? "<span>" + v.title + "</span>" : "<a href='" + v.url + "'>" + v.title + "</a>";
-        var a = $("#nav ul.navbar-nav").add(html); 
+        var a = $("#main-menu").add(html); 
         if(v.selected)
             a.addClass("active");
     });
