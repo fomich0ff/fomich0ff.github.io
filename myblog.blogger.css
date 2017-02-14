@@ -135,8 +135,12 @@ a:hover {
 
 header {
     height: 150px;
-    
 }
+
+.header .section {
+    padding: 0px;
+}
+
 /*SIZES*/
 
 .p-10 {
