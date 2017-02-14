@@ -169,6 +169,25 @@ header {
     color: #4c4c4c;
 }
 
+#main-menu {
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#main-menu span {
+    display: inline-block;
+    padding: 15px;
+    background: #ababab;
+    border-radius: 5px;
+}
+
+#main-menu li {
+    margin: 0px 15px 0px 0px;
+}
+
+#main-menu a {
+    border-radius: 5px;
+}
 
 /*
 .navbar-nav li.active a {
