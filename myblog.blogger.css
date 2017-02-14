@@ -129,19 +129,23 @@ a:hover {
     color: black !important;
 }
 
+#nav {
+    -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
+    
+}
+
 #nav.affix {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 10;
-    -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
 }
 
 .navbar {
     height: 100% !important;
-    background: #ababab;
+    background: #f8f8f8;
     border-radius: 0px !important;
 }
 
@@ -163,12 +167,14 @@ header {
 }
 
 .navbar-nav li a {
-    color: white;
+    color: #4c4c4c;
 }
 
+/*
 .navbar-nav li.active a {
     color: black;
 }
+*/
 
 .navbar-nav li.active {
     background: #f8f8f8;
@@ -193,6 +199,7 @@ header {
     font-size: 24px;
     opacity: 0;
     visibility: hidden;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 
