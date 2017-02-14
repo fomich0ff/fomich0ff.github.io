@@ -199,7 +199,7 @@ header {
 }
 
 #main-menu .post {
-    border: 2px dash #ababab;
+    border: 2px dashed #ababab;
 }
 
 #main-menu li {
