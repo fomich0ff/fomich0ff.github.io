@@ -127,7 +127,7 @@ a:hover {
     z-index:10;
 }
 
-.widget .Label {
+.widget (.Label, .PageList) {
     height: 0px;
     margin: 0px;
     padding: 0px;
