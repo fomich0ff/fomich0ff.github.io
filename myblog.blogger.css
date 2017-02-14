@@ -127,6 +127,12 @@ a:hover {
     z-index:10;
 }
 
+.widget .Label {
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
 /*SIZES*/
 
 .p-10 {
