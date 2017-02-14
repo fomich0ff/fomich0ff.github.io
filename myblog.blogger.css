@@ -162,6 +162,19 @@ header {
     background: #f8f8f8;
 }
 
+.navbar-nav li a {
+    color: white;
+}
+
+.navbar-nav li.active a {
+    color: black;
+}
+
+.navbar-nav li.active {
+    background: #f8f8f8;
+    border-radius: 5px;
+}
+
 
 /*SIZES*/
 
