@@ -183,7 +183,8 @@ a:hover {
 }
 
 #main-menu .page {
-	background: #ababab;
+	border: 2px solid #ababab;
+    margin-top: -3px;
 }
 
 #main-menu .post {
