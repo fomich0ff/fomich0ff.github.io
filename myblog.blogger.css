@@ -178,7 +178,7 @@ a:hover {
 
 #main-menu span {
 	display: inline-block;
-	padding: 15px;
+	padding: 10px;
 	border-radius: 5px;
 }
 
@@ -199,6 +199,8 @@ a:hover {
 
 #main-menu a {
 	border-radius: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px
 }
 
 .navbar-nav li.active {
