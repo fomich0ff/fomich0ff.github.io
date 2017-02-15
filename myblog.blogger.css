@@ -208,6 +208,7 @@ a:hover {
 	border-radius: 5px;
 }
 
+/*
 .affix-top .affix-title {
 	opacity: 0;
 	visibility: visible;
@@ -228,7 +229,14 @@ a:hover {
 	visibility: hidden;
 	font-family: 'Ubuntu', sans-serif;
 }
+*/
 
+.no-results {
+    padding: 100px 0px;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 20px;
+}
 
 /*SIZES*/
 
