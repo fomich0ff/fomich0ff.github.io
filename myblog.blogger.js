@@ -1,9 +1,9 @@
 $(document).ready(() => {
-    $('#nav').affix({
+    /*$('#nav').affix({
         offset: {
             top: $('header').height()
         }
-    });
+    });*/
     
     $.each(pages, (i, v) => {
         
