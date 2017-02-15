@@ -159,12 +159,6 @@ a:hover {
 }
 
 
-/*
-header {
-    height: 150px;
-}
-*/
-
 #header {
     margin: 0px;
     width: 100%;
@@ -200,6 +194,7 @@ header {
 
 #main-menu .post {
     border: 2px dashed #ababab;
+    margin-top: -2px;
 }
 
 #main-menu li {
@@ -210,12 +205,6 @@ header {
     border-radius: 5px;
 }
 
-
-/*
-.navbar-nav li.active a {
-    color: black;
-}
-*/
 
 .navbar-nav li.active {
     background: #f8f8f8;
