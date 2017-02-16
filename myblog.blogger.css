@@ -9,7 +9,7 @@
 
 body {
 	background: #EFEFEF;
-	font-size: 100%;
+	font-size: 100% !important;
 }
 
 h1.title {
