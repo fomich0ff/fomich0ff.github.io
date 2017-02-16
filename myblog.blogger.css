@@ -9,17 +9,16 @@
 
 body {
 	background: #EFEFEF;
-	font-size: 100% !important;
 }
 
 h1.title {
-	font-size: 4em;
+	font-size: 64px;
 	font-family: 'Comfortaa', cursive;
 	text-align: center;
 }
 
 p.description {
-	font-size: 1.125em;
+	font-size: 18px;
 	text-indent: 0px;
 	text-align: center;
 	font-family: 'Rubik', sans-serif;
