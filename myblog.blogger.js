@@ -5,6 +5,8 @@ $(document).ready(() => {
         }
     });*/
     
+    $('span.post-label:contains("archive")').addClass('archive-label');
+    
     $.each(pages, (i, v) => {
         
         var html = "<li>";
