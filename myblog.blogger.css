@@ -75,6 +75,17 @@ p {
 	white-space: nowrap;
 }
 
+.post-label.archive-label {
+    background: #fd6c6c;
+    /*margin: 2px;
+    border-radius: 5px;*/
+    border: 2px solid #a00909;
+    /*font-size: 14px;*/
+    color: #eae9e9;
+    /*padding: 2px;
+    white-space: nowrap;*/
+}
+
 .post-label-outline {
 	float: right;
 	margin: 4px 0px;
