@@ -178,6 +178,15 @@ a:hover {
 	margin-top: 20px;
 }
 
+#footer {
+    background: #f8f8f8;
+    margin-top: 40px;
+}
+
+.section, .widget {
+	margin:0px;
+}
+
 .navbar-nav li a {
 	color: #4c4c4c;
 }
