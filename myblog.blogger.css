@@ -176,6 +176,10 @@ a:hover {
 #footer {
     background: #f8f8f8;
     margin-top: 40px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 210px;
 }
 
 .section, .widget {
@@ -233,6 +237,9 @@ a:hover {
     text-align: center;
 }
 
+.blog-posts {
+    padding-bottom: 260px;
+}
 
 /*
 .affix-top .affix-title {
