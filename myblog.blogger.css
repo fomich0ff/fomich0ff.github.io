@@ -153,10 +153,6 @@ a:hover {
     border-radius: 0px !important;
 }
 
-.widget{
-	position:inherit;
-}
-
 .widget.Label,
 .widget.PageList {
     height: 0px;
