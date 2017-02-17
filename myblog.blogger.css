@@ -166,16 +166,25 @@ a:hover {
 }
 
 #header {
-    margin: 0px;
-    width: 100%;
-    background: #f8f8f8;
-    -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
+	margin-bottom: 40px;
+	width: 100%;
+	background: #f8f8f8;
+	-moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
 }
 
 #header-inner {
     margin-top: 20px;
+}
+
+#footer {
+    background: #f8f8f8;
+    margin-top: 40px;
+}
+
+.section, .widget {
+	margin:0px !important;
 }
 
 .navbar-nav li a {
