@@ -95,7 +95,7 @@ p {
     color: black;
 }
 
-a.home-link {
+a.home-link, .blog-pager-older-link, .blog-pager-newer-link {
     color: #8b8b8b;
     font-size: 32px;
     text-indent: 0px;
