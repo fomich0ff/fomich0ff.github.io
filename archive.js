@@ -83,7 +83,7 @@ $(document).ready(() => {
 
 			this.avg = 0;
 			$.each(this.labels(), (index, item) => {
-				model.avg += item.count;
+				model.avg += parseInt(item.count);
 			});
 			this.avg = this.avg / this.labels.length;
 
