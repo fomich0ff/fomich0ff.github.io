@@ -62,7 +62,7 @@ $(document).ready(()=>{
 
 
 		var ViewModel = function(data) {
-			this.years = ko.observable(data.years);
+			this.years = ko.observable(data.posts);
 			this.labels = ko.observable(data.labels);
 		};
  
