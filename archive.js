@@ -28,10 +28,12 @@ $(document).ready(() => {
 
 			/* get month */
 			var month = monthNames[published.getMonth()];
-			var foundMonth = filtered.length > 0 ? filtered[0] : null;
+
 			filtered = $(years[yearIndex].months, (index, item) => {
 				return item.month == month;
 			});
+
+			var foundMonth = filtered.length > 0 ? filtered[0] : null;
 
 			if (!foundMonth) {
 				years[yearIndex].months.push({
