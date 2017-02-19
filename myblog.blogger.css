@@ -71,7 +71,7 @@ p {
     border: 1px solid #999;
     font-size: 14px;
     color: #999;
-    padding: 2px;
+    padding: 0px 5px;
     white-space: nowrap;
     display: inline-block;
 }
