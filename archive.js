@@ -19,7 +19,9 @@ $(document).ready(() => {
 			if (!foundYear) {
 				years.push({
 					"year": year,
-					"months": []
+					"months": [],
+					"count" : 0,
+					"norma" : 0
 				});
 				foundYear = years[years.length - 1];
 			}
@@ -38,7 +40,9 @@ $(document).ready(() => {
 			if (!foundMonth) {
 				years[yearIndex].months.push({
 					'month': month,
-					'days': []
+					'days': [],
+					"count" : 0
+					"norma" : 0
 				});
 
 				foundMonth = years[yearIndex].months[years[yearIndex].months.length - 1];
@@ -72,11 +76,26 @@ $(document).ready(() => {
 				})[0].href
 			});
 
+			years[yearIndex].count += 1;
+			years[yearIndex].months[monthIndex].count += 1;
+
 		});
 
 
 		var ViewModel = function (data) {
 			var model = this;
+
+			var total = 0;
+
+			$.each(data.posts, (index, item) => {
+				total += item.count;
+				item.norma = item.count / total;
+				$.each(item.months, (idx, itm) => {
+					itm.norma = itm.count / total;
+				});
+			});
+
+			
 
 			this.years = ko.observable(data.posts);
 			this.labels = ko.observable(data.labels);
