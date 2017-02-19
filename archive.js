@@ -62,10 +62,14 @@ $(document).ready(()=>{
 
 
 		var ViewModel = function(data) {
-			this.data = ko.observable(data);
+			this.years = ko.observable(data.years);
+			this.labels = ko.observable(data.labels);
 		};
  
-		ko.applyBindings(new ViewModel(years)); 
+		ko.applyBindings(new ViewModel({
+			"posts" : years,
+			"labels": labels
+		})); 
 
 		console.debug(data, years);
 	});
