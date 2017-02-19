@@ -338,7 +338,11 @@ a:hover {
 }
 
 .month-outline {
-	margin-left: 40px;
+	margin-left: 80px;
+}
+
+.month-heading {
+	font-size: 1.2em;
 }
 
 .posts-outline {
