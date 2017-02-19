@@ -89,6 +89,9 @@ $(document).ready(() => {
 
 			$.each(data.posts, (index, item) => {
 				total += item.count;
+			});
+
+			$.each(data.posts, (index, item) =>{
 				item.norma = item.count / total;
 				$.each(item.months, (idx, itm) => {
 					itm.norma = itm.count / total;
