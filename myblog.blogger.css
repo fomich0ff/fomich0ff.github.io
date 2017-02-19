@@ -73,14 +73,13 @@ p {
     color: #999;
     padding: 0px 5px;
     white-space: nowrap;
-    display: inline-block;
 }
 
 .post-label .count {
     background: white;
-    color: black;
     border-radius: 15px;
-    border: 1px solid black;
+    border-width: 1px;
+    border-style: solid;
     padding: 0px 5px;
 }
 
@@ -102,6 +101,14 @@ p {
 .post-label-outline > a:hover .post-label {
     border: 1px solid black;
     color: black;
+}
+
+.post-label.important, .post-label.nonimportant {
+    display: inline-block;
+}
+
+.post-label.nonimportant > .count {
+	border-color: #999;
 }
 
 a.home-link, .blog-pager-older-link, .blog-pager-newer-link {
