@@ -125,7 +125,7 @@ $(document).ready(() => {
 			});
 
 			this.getWidth = function(norma){
-				return (norma*100).toString() + "%";
+				return (norma*100).toFixed(2) + "%";
 			};
 
 		};
