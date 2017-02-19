@@ -10,7 +10,7 @@ $(document).ready(()=>{
       /* get year */
       var year = published.getFullYear().toString();
 
-	var filtered = $.filter(years, (index, value) => {
+	var filtered = $(years).filter((index, value) => {
 		return value.year == year;
 	});
 
@@ -23,7 +23,7 @@ $(document).ready(()=>{
          });
 
 	foundYear = years[years.length-1];
-      }
+      
 
       var yearIndex = years.indexOf(foundYear);      
 
@@ -36,7 +36,7 @@ $(document).ready(()=>{
 
       /*get day*/
       var day = published.getDay();
-	filtered = $.filter(years[yearIndex].months[month], (index, item) => {
+	filtered = $(years[yearIndex].months[month]).filter((index, item) => {
 		return item.day == day;
 	})
 
