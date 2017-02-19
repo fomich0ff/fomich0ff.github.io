@@ -9,13 +9,21 @@ $(document).ready(()=>{
 
       /* get year */
       var year = published.getFullYear().toString();
-      if(years.indexOf(year) == -1) {
+
+	var foundYear = $.filter(years, (index, value) => {
+		return value.year == year;
+	})[0];
+
+      if(!foundYear) {
          years.push({
            "year" : year,
            "months": []
          );
+
+	foundYear = years[years.length-1];
       }
-      var yearIndex = years.indexOf(year);      
+
+      var yearIndex = years.indexOf(foundYear);      
 
       /* get month */
       var month = monthNames[published.getMonth()];
@@ -26,22 +34,29 @@ $(document).ready(()=>{
 
       /*get day*/
       var day = published.getDay();
-      if(years[yearIndex].months[month].indexOf(day) == -1) {
-         years[yearIndex].months[month].push({
-            "day":day,
-            "posts": []
-         });
-      }
 
-      
-      var dayIndex = years[yearIndex][month].indexOf(day);
+	var foundDay = $.filter(years[yearIndex].months[month], (index, item) => {
+		return item.day == day;
+	});
 
-      years[yearIndex][month][dayIndex].push({
-        "title" : value.title.$t,
-        "link" : value.link.filter((item) => { return item.rel == 'alternate'; })[0].href
-      });
+	if (!foundDay)
+	{
+		years[yearIndex].months[month].push({
+			"day":day,
+			"posts": []
+		});
+		foundDay = years[yearIndex].months[month][years[yearIndex].months[month].length - 1];
+	}
 
-    });
+    
+	var dayIndex = years[yearIndex][month].indexOf(foundDay);
+
+	years[yearIndex][month][dayIndex].push({
+		"title" : value.title.$t,
+		"link" : value.link.filter((item) => { return item.rel == 'alternate'; })[0].href
+	});
+
+});
 
 
     var ViewModel = function(data) {
