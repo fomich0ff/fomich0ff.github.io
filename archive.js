@@ -124,6 +124,10 @@ $(document).ready(() => {
 				});
 			});
 
+			this.getWidth = function(norma){
+				return (norma*100).toString() + "%";
+			};
+
 		};
 
 		ko.applyBindings(new ViewModel({
