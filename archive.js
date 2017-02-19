@@ -51,7 +51,7 @@ $(document).ready(()=>{
 			}
 
     
-			var dayIndex = years[yearIndex][month].indexOf(foundDay);
+			var dayIndex = years[yearIndex].months[month].indexOf(foundDay);
 
 			years[yearIndex][month][dayIndex].push({
 				"title" : value.title.$t,
