@@ -10,9 +10,11 @@ $(document).ready(()=>{
       /* get year */
       var year = published.getFullYear().toString();
 
-	var foundYear = $.filter(years, (index, value) => {
+	var filtered = $.filter(years, (index, value) => {
 		return value.year == year;
-	})[0];
+	});
+
+	var foundYear = filtered.length > 0 ? filtered[0] : null;
 
       if(!foundYear) {
          years.push({
@@ -34,10 +36,11 @@ $(document).ready(()=>{
 
       /*get day*/
       var day = published.getDay();
-
-	var foundDay = $.filter(years[yearIndex].months[month], (index, item) => {
+	filtered = $.filter(years[yearIndex].months[month], (index, item) => {
 		return item.day == day;
-	});
+	})
+
+	var foundDay = filtered.length > 0 ? filtered[0] : null;
 
 	if (!foundDay)
 	{
