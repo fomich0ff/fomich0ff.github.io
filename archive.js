@@ -53,7 +53,7 @@ $(document).ready(()=>{
     
 			var dayIndex = years[yearIndex].months[month].indexOf(foundDay);
 
-			years[yearIndex][month][dayIndex].push({
+			years[yearIndex].months[month][dayIndex].push({
 				"title" : value.title.$t,
 				"link" : value.link.filter((item) => { return item.rel == 'alternate'; })[0].href
 			});
