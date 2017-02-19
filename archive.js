@@ -135,6 +135,6 @@ $(document).ready(() => {
 			"labels": labels
 		}));
 
-		console.debug(data, years);
+		//console.debug(data, years);
 	});
 });
