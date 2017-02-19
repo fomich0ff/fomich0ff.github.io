@@ -18,7 +18,7 @@ $(document).ready(()=>{
          years.push({
            "year" : year,
            "months": []
-         );
+         });
 
 	foundYear = years[years.length-1];
       }
