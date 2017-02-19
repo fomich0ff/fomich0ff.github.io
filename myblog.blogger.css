@@ -336,6 +336,32 @@ a:hover {
     top: 0px;
     width: 100%;
 }
+
+.month-outline {
+	margin-left: 40px;
+}
+
+.posts-outline {
+	margin-left: 40px;
+}
+
+.year-outline > a {
+    text-decoration: none;
+    color: #4c4c4c;
+    font-family: 'Comfortaa', cursive;
+}
+
+.panel-heading {
+    background-color: #fafafa;
+    border-radius: 5px;
+    font-size: 1.5em;
+    padding-left: 30px;
+}
+
+.panel-heading:hover {
+    background-color: #ababab;
+}
+
 /*SIZES*/
 
 .p-10 {
