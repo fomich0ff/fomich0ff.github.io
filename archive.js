@@ -48,7 +48,7 @@ $(document).ready(() => {
 
 			/*get day*/
 			var day = published.getDay();
-			filtered = $(years[yearIndex].months[monthIndex]).filter((index, item) => {
+			filtered = $(years[yearIndex].months[monthIndex].days).filter((index, item) => {
 				return item.day == day;
 			})
 
