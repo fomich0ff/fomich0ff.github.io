@@ -41,7 +41,7 @@ $(document).ready(() => {
 				years[yearIndex].months.push({
 					'month': month,
 					'days': [],
-					"count" : 0
+					"count" : 0,
 					"norma" : 0
 				});
 
