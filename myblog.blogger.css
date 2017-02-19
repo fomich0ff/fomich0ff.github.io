@@ -107,7 +107,7 @@ p {
     display: inline-block;
 }
 
-.post-label.non-important:hover {
+.post-label.non-important:hover,  .post-label.non-important:hover > .count{
 	border-color:black;
 	color:black;
 }
