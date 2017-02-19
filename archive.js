@@ -81,21 +81,24 @@ $(document).ready(() => {
 			this.years = ko.observable(data.posts);
 			this.labels = ko.observable(data.labels);
 
-			this.avg = 0;
-			$.each(this.labels(), (index, item) => {
-				model.avg += parseInt(item.count);
+			this.avg = ko.computed(() => {
+				var avg = 0
+				$.each(model.labels(), (index, item) => {
+					avg += parseInt(item.count);
+				});
+				return avg / model.labels().length;
 			});
-			this.avg = this.avg / this.labels.length;
+
 
 			this.importantLabels = ko.computed(() => {
 				return ko.utils.arrayFilter(model.labels(), (label) => {
-					return label.count >= model.avg;
+					return label.count >= model.avg();
 				});
 			});
 
 			this.nonimportantLabels = ko.computed(() => {
 				return ko.utils.arrayFilter(model.labels(), (label) => {
-					return label.count < model.avg;
+					return label.count < model.avg();
 				});
 			});
 
