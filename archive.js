@@ -82,7 +82,7 @@ $(document).ready(() => {
 			this.labels = ko.observable(data.labels);
 
 			this.avg = 0;
-			$.each(this.labels, (index, item) => {
+			$.each(this.labels(), (index, item) => {
 				model.avg += item.count;
 			});
 			this.avg = this.avg / this.labels.length;
