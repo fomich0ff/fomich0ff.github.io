@@ -76,8 +76,17 @@ $(document).ready(() => {
 
 
 		var ViewModel = function (data) {
+			var model = this;
+
 			this.years = ko.observable(data.posts);
 			this.labels = ko.observable(data.labels);
+
+			this.avg = 0;
+			$.each(this.labels, (index, item) => {
+				model.avg += item.count;
+			});
+			this.avg = this.avg / this.labels.length;
+
 		};
 
 		ko.applyBindings(new ViewModel({
