@@ -345,10 +345,14 @@ a:hover {
 	margin-left: 40px;
 }
 
+.year-outline > a {
+    
+    font-family: 'Comfortaa', cursive;
+}
+
 #archive a {
     text-decoration: none;
     color: #4c4c4c;
-    font-family: 'Comfortaa', cursive;
 }
 
 .panel-heading {
