@@ -87,6 +87,18 @@ $(document).ready(() => {
 			});
 			this.avg = this.avg / this.labels.length;
 
+			this.importantLabels = ko.computed(() => {
+				return ko.utils.arrayFilter(model.labels(), (label) => {
+					return label.count >= model.avg;
+				});
+			});
+
+			this.nonimportantLabels = ko.computed(() => {
+				return ko.utils.arrayFilter(model.labels(), (label) => {
+					return label.count < model.avg;
+				});
+			});
+
 		};
 
 		ko.applyBindings(new ViewModel({
