@@ -94,7 +94,7 @@ $(document).ready(() => {
 			$.each(data.posts, (index, item) =>{
 				item.norma = item.count / total;
 				$.each(item.months, (idx, itm) => {
-					itm.norma = itm.count / total;
+					itm.norma = itm.count / item.count;
 				});
 			});
 

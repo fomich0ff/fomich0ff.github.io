@@ -107,6 +107,11 @@ p {
     display: inline-block;
 }
 
+.post-label.non-important:hover {
+	border-color:black;
+	color:black;
+}
+
 .post-label.non-important > .count {
 	border-color: #999;
 }
@@ -328,6 +333,8 @@ a:hover {
 .activity-outline > .data {
 	position:absolute;
 	z-index:1;
+    top: 0px;
+    width: 100%;
 }
 /*SIZES*/
 
