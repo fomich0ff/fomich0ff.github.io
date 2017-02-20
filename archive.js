@@ -99,7 +99,7 @@ $(document).ready(() => {
 			});
 
 			data.labels.sort((a,b) => {
-				return a.count - b.count;
+				return b.count - a.count;
 			});
 
 			this.years = ko.observable(data.posts);
