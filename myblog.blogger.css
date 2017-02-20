@@ -34,7 +34,8 @@ p {
 a,
 a:hover,
 a:visited,
-a:active {
+a:active,
+a:-webkit-any-link {
 	text-decoration: none;
 }
 
