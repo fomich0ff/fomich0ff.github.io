@@ -33,7 +33,8 @@ p {
 
 a,
 a:hover,
-a:visited {
+a:visited,
+a:active {
 	text-decoration: none;
 }
 
