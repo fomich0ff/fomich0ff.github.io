@@ -31,7 +31,7 @@ $(document).ready(() => {
 			/* get month */
 			var month = monthNames[published.getMonth()];
 
-			filtered = $(years[yearIndex].months, (index, item) => {
+			filtered = $(years[yearIndex].months).filter((index, item) => {
 				return item.month == month;
 			});
 
