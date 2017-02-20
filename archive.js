@@ -51,7 +51,7 @@ $(document).ready(() => {
 			var monthIndex = years[yearIndex].months.indexOf(foundMonth);
 
 			/*get day*/
-			var day = published.getDay();
+			var day = published.getDate();
 			filtered = $(years[yearIndex].months[monthIndex].days).filter((index, item) => {
 				return item.day == day;
 			})
