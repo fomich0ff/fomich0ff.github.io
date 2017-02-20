@@ -98,7 +98,9 @@ $(document).ready(() => {
 				});
 			});
 
-			
+			data.labels.sort((a,b) => {
+				return a.count - b.count;
+			});
 
 			this.years = ko.observable(data.posts);
 			this.labels = ko.observable(data.labels);
