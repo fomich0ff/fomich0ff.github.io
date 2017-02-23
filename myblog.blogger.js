@@ -15,4 +15,6 @@ $(document).ready(() => {
         html += "</li>";
         $("#main-menu").append(html); 
     });
+    
+    DISQUSWIDGETS.getCount({reset: true});
 });
