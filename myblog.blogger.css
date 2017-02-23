@@ -148,10 +148,9 @@ a.external:after {
     color: black;
 }
 
-/*.post-label.important.post-label-size-4 > .count {
-	color: #c10202;
-	border-color: #c10202;
-}*/
+.post-label.important.post-label-size-4 > .count {
+	color: black;
+}
 
 .post-label.important.post-label-size-4 {
     background-color: #696969;
