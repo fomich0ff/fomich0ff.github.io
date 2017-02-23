@@ -144,9 +144,9 @@ a.external:after {
     border-color: black;
 }
 
-/*.post-label.important.post-label-size-5 > .count {
-    color: #c30202;
-}*/
+.post-label.important.post-label-size-5 > .count {
+    color: black;
+}
 
 /*.post-label.important.post-label-size-4 > .count {
 	color: #c10202;
