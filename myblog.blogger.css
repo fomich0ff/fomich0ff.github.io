@@ -138,7 +138,15 @@ a.external:after {
 	border-color: #999;
 }
 
-.post-label.non-important.post-label-size-5 {}
+.post-label.important.post-label-size-5 {
+    background-color: #c30202;
+    color: white;
+    border-color: black;
+}
+
+.post-label.important.post-label-size-5 > .count {
+    color: #c30202;
+}
 
 .post-label.important.post-label-size-4 > .count {
 	color: #c10202;
