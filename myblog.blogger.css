@@ -139,7 +139,7 @@ a.external:after {
 }
 
 .post-label.important.post-label-size-5 {
-    background-color: black;
+    background-color: #555555;
     color: white;
     border-color: black;
 }
