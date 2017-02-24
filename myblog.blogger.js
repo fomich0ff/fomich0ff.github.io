@@ -16,5 +16,5 @@ $(document).ready(() => {
         $("#main-menu").append(html); 
     });
     
-    DISQUSWIDGETS.getCount({reset: true});
+    
 });
