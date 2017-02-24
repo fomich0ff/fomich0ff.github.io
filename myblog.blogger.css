@@ -407,6 +407,16 @@ a:hover {
 }
 
 
+a.comment-link.disqus-blogger-comment-link {
+    font-size: 1em;
+}
+
+a.comment-link.disqus-blogger-comment-link:before {
+    content: "\f0e6";
+    font-family: FontAwesome;
+    margin-right: 5px;
+}
+
 /*SIZES*/
 
 .p-10 {
