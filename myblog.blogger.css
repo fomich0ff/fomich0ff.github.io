@@ -3,11 +3,11 @@ body {
 }
 
 quote{
-    padding: 30px;
-    display: block;
-    background: #efefef;
-    margin: 30px;
-    font-style: italic;
+	padding: 30px;
+	display: block;
+	background: #efefef;
+	margin: 30px;
+	font-style: italic;
 }
 
 h1.title {
