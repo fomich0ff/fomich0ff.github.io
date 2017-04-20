@@ -1,12 +1,3 @@
-/*
-*Variables:
-*
-*	<!--Variable name='comfortaa' description='default font' type='Font' default='Comfortaa'/-->
-*	<Variable name="post.title.font" description="Font" type="font" default="Ubuntu, sans-serif"  value="Ubuntu, sans-serif"/>
-*	<Variable name="post.body.font" description="Font" type="font" default="'Noto Sans', Helvetica, sans-serif"  value="&#39;Noto Sans&#39;, Helvetica, sans-serif"/>
-*
-*/
-
 body {
 	background: #EFEFEF;
 }
