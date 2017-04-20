@@ -456,7 +456,7 @@ a.comment-link.disqus-blogger-comment-link:before {
 
 .boxshadow-inner {
 	position: relative;
-	-moz-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, .3);
-	-webkit-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, .3);
-	box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, .3);
+	-moz-box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, .3);
+	-webkit-box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, .3);
+	box-shadow: inset inset 0px 0px 8px 0px rgba(0, 0, 0, .3);
 }
