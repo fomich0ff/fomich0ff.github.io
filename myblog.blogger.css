@@ -18,6 +18,11 @@ h1.title {
 	text-align: center;
 }
 
+h4 {
+	font-size: 20px;
+	margin: 15px 15px 25px;
+}
+
 p.description {
 	font-size: 18px;
 	text-indent: 0px;
