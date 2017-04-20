@@ -19,7 +19,7 @@ h1.title {
 }
 
 h4 {
-	font-size: 20px;
+	font-size: 20px; important!
 	margin: 15px 15px 25px;
 }
 
