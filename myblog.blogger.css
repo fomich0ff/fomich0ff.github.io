@@ -3,11 +3,13 @@ body {
 }
 
 quote{
-	padding: 30px;
+	padding: 20px;
 	display: block;
 	background: #efefef;
-	margin: 30px;
-	font-style: italic;
+	margin: 20px;
+	border: 1px solid #adabab;
+	font-family: 'Comfortaa', cursive;
+	font-size: 16px;
 }
 
 h1.title {
