@@ -11,6 +11,14 @@ body {
 	background: #EFEFEF;
 }
 
+quote{
+    padding: 30px;
+    display: block;
+    background: #efefef;
+    margin: 30px;
+    font-style: italic;
+}
+
 h1.title {
 	font-size: 64px;
 	font-family: 'Comfortaa', cursive;
