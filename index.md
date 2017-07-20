@@ -1,7 +1,7 @@
 ---
 title: Метод научного тыка
 ---
-{% for post in site.latest_posts %}
+{% for post in site.posts %}
   <div class="entry">
   	<div class="entrytitle">
   		<h2><a href="{{ post.url }}">{{ post.title }}</a> <span class="author">{{ post.author }}</span></h2> 
