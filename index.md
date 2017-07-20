@@ -1,7 +1,19 @@
 ---
 title: Метод научного тыка
 ---
-Hello world
-===========
-
-This is the test
+{% for post in site.latest_posts %}
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="{{ post.url }}">{{ post.title }}</a> <span class="author">{{ post.author }}</span></h2> 
+  		<h3>{{ post.date | date_to_string }} | <a href="{{ post.url }}#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  {{ post.content }}
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="{{ post.url }}#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+{% endfor %}
