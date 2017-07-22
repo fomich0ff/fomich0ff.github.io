@@ -1,5 +1,11 @@
-{% assign m = page.date | date: "%-m" %}
-{{ page.date | date: "%-d" }}
+{% if post %}
+  {% assign article_date = post.date %}
+{% else %}
+  {% assign article_date = page.date %}
+{% endif %}
+
+{% assign m = article_date | date: "%-m" %}
+{{ article_date | date: "%-d" }}
 {% case m %}
   {% when '1' %}Января
   {% when '2' %}Февраля
@@ -14,4 +20,4 @@
   {% when '11' %}Ноября
   {% when '12' %}Декабря
 {% endcase %}
-{{ page.date | date: "%Y" }}
+{{ article_date | date: "%Y" }}
