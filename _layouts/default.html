@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>
-	{% if page.title %}
-		test {{page.title}}
-	{% endif %}
-		</title>
+		{% include title.html %}
 	</head>
 <body>
 	{% include header.html %}
