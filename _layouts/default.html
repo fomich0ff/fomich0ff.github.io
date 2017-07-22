@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html>
+	<head>
+	{%if page.title %}
+		{{page.title}}
+	{%endif%}
+	</head>
 <body>
 	{% include header.html %}
 	<div class="page-content"> {{ content }} </div>
