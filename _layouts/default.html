@@ -1,16 +1,5 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-	<title>
-		{% if page.title %}
-			{{ page.title }} - {{ site.title }}
-		{% elsif %}
-			test {{ site.title }}
-		{% endif %}
-	</title>
-</head>
-
 <body>
 	{% include header.html %}
 	<div class="page-content"> {{ content }} </div>
