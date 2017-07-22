@@ -1,7 +1,7 @@
 <header>
     <div id="site-title">
 		{% if page.url == '/' %}
-			<a href="{{site.home}}">{{ site.title }}</a>
+			<a href="{{ site.home }}">{{ site.title }}</a>
 		{% elsif %}
 			{{ site.title }}
 		{% endif %}
