@@ -1,14 +1,4 @@
-#name: Метод научного тыка
 title: Метод научного тыка
-#description: This is a sample Jekyll Blog.
 author: Олег Фомичёв
-#author_email: you@example.com
 
 excerpt_separator: <!--more-->
-
-gems:
-  - jemoji
-
-permalink: pretty
-
-paginate: 10
