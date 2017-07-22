@@ -1,11 +1,9 @@
 <header>
     <div id="site-title">
-	{% if page.url == "/" %}
+		{% if page.url == "/" %}
 			{{ site.title }}
-	{% else %}	
-
-			
-	    <a href="/">{{ site.title }}</a>
+		{% else %}
+			<a href="/">{{ site.title }}</a>
 		{% endif %}	
     </div>
     <div id="site-description">
