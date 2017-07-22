@@ -2,8 +2,10 @@
     <div id="site-title">
 	{% if page.url == "/" %}
 			{{ site.title }}
-		
-	    
+	{% else %}	
+
+			
+	    <a href="{{ site.home }}">{{ site.title }}</a>
 		{% endif %}	
     </div>
     <div id="site-description">
