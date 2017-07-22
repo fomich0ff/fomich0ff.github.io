@@ -1,7 +1,11 @@
 <header>
     <div id="site-title">
+	{% if page.url == "/" %}
+			{{ site.title }}
 		
-	</div>
+	    
+		{% endif %}	
+    </div>
     <div id="site-description">
         {{ site.description }}
     </div>
