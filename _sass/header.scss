@@ -2,9 +2,9 @@ header {
     #site-title {
         @extend %text-center;
         @include respond-to(phones) {
-            font-size: 2em;
-            margin-top: 1em;
-            margin-bottom: 1em;
+            font-size: 1.75em;
+            margin-top: 0.3em;
+            margin-bottom: 0.3em;
         }
         font-family: $font-title;
     }
