@@ -6,8 +6,10 @@ header {
             margin-top: 1em;
             margin-bottom: 1em;
         }
+        font-family: $font-title;
     }
     #site-description {
         @extend %text-center;
+        font-family: $font-description;
     }
 }
