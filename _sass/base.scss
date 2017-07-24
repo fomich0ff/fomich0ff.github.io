@@ -1,10 +1,41 @@
-html {
-    font-size: 16px;
-    @media screen and (min-width: 900px) {
-        font-size: 18px;
+$break-phone: 480px;
+$break-tablet: 1024px;
+$break-desktop: 1200px;
+@mixin respond-to($media) {
+    @if $media==phones {
+        @media only screen and (max-width: $break-phone) {
+            @content;
+        }
     }
-    @media screen and (min-width: 1200px) {
-        font-size: 20px;
+    @else if $media==tablets {
+        @media only screen and (min-width: $break-phone + 1) and (max-width: $break-tablet) {
+            @content;
+        }
+    }
+    @else if $media==desktops {
+        @media only screen and (min-width: $break-tablet + 1) and (max-width: $break-desktop) {
+            @content;
+        }
+    }
+    @else if $media==wide-screens {
+        @media only screen and (min-width: $break-desktop + 1) {
+            @content;
+        }
+    }
+}
+
+html {
+    @include respond-to(phones) {
+        font-size: 14px;
+    }
+    @include respond-to(tablets) {
+        font-size: 14px;
+    }
+    @include respond-to(desktops) {
+        font-size: 16px;
+    }
+    @include respond-to(wide-screens) {
+        font-size: 18px;
     }
 }
 
