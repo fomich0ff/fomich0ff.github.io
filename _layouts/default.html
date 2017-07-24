@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		{% include title.html %}
-		{% include frameworks.html %}
-
-        <link rel="stylesheet" href="/css/main.css">
+		{% include head.html %}
 	</head>
 <body>
 	{% include header.html %}
-	<div class="page-content container"> {{ content }} </div>
-	{% include footer.html %}
+
+    <div class="page-content container">
+        {{ content }}
+    </div>
+
+    {% include footer.html %}
 </body>
 
 </html>
