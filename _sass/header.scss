@@ -6,6 +6,11 @@ header {
             margin-top: 0.3em;
             margin-bottom: 0.3em;
         }
+        @include respond-to(tablets) {
+            font-size: 1.75em;
+            margin-top: 0.3em;
+            margin-bottom: 0.3em;
+        }
         font-family: $font-title;
     }
     #site-description {
