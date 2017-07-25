@@ -4,4 +4,11 @@ footer {
     bottom: 0px;
     width: 100%;
     background-color: $regular-background-color;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    #disclaimer{
+        font-size: 0.6em;
+    }
 }

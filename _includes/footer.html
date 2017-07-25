@@ -1,6 +1,8 @@
 <footer>
     <div id="blog-navigation">
-        <a href="/">Home</a>
+        {% if page.url != "/" %}
+			<a href="/">Home</a>
+		{% endif %}
     </div>
     <div id="disclaimer">{{ site.disclaimer }}</div>
 </footer>
