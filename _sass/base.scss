@@ -2,15 +2,21 @@
     Variables
 */
 
+
+/* Basic colors */
+
 $regular-text-color: #000;
 $regular-background-color: #fff;
 $outside-background-color: #e4e4e4;
 
 /* Blockqoute color palette */
+
 $blockquote-text-color: #5b6770;
-$blockquote-background-color: #ccd0d4;
-$blockquote-border-color: #969ea4;
+$blockquote-background-color: #eff0f4;
+$blockquote-border-color: #c7cbd0;
 $blockquote-sign-color: #b1b7bc;
+
+/* Basic configuration */
 
 $font-size: 18px;
 $break-phone: 768px;
@@ -53,12 +59,15 @@ body {
     blockquote {
         font-size: $font-size;
         border-left: 5px solid $blockquote-border-color;
+        border-right: 1px solid $blockquote-border-color;
+        border-bottom: 1px solid $blockquote-border-color;
+        border-top: 1px solid $blockquote-border-color;
         background-color: $blockquote-background-color;
         color: $blockquote-text-color;
-
         em {
             color: $blockquote-sign-color;
             text-align: right;
+            display: block;
         }
     }
 }
