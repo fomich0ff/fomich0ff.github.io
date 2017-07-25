@@ -3,7 +3,7 @@
 */
 $regular-text-color: #000;
 $regular-background-color: #fff;
-$outside-background-color: #acacac;
+$outside-background-color: #e4e4e4;
 
 $break-phone: 768px;
 $break-tablets: 1200px;
@@ -51,8 +51,6 @@ body {
 		font-size: 1.5em;
 	}
 	background: $outside-background-color;
-    	border-radius: 0.5em;
-	margin: 1em auto;
 }
 
 .blog {
