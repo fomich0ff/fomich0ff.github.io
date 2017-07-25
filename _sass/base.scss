@@ -1,3 +1,10 @@
+/*
+    Variables
+*/
+$regular-text-color: #000;
+$regular-background-color: #fff;
+$outside-background: #acacac;
+
 $break-phone: 768px;
 $break-tablets: 1200px;
 @mixin respond-to($media) {
@@ -19,7 +26,7 @@ $break-tablets: 1200px;
 }
 
 html {
-
+    background: $outside-background;
 }
 
 body {
@@ -47,4 +54,9 @@ body {
 	h3 {
 		font-size: 1.5em;
 	}
+}
+
+.blog {
+    color: $regular-text-color;
+    background: $regular-background-color;
 }
