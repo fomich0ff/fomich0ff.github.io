@@ -1,50 +1,50 @@
 $break-phone: 768px;
-$break-desktop: 1200px;
+$break-tablets: 1200px;
 @mixin respond-to($media) {
-    @if $media==phones {
-        @media only screen and (max-width: $break-phone) {
-            @content;
-        }
-    }
-    @else if $media==tablets {
-        @media only screen and (min-width: $break-phone + 1) and (max-width: $break-desktop) {
-            @content;
-        }
-    }
-    @else if $media==desktops {
-        @media only screen and (min-width: $break-desktop + 1){
-            @content;
-        }
-    }
-    
+	@if $media==phones {
+		@media only screen and (max-width: $break-phone) {
+			@content;
+		}
+	}
+	@else if $media==tablets {
+		@media only screen and (min-width: $break-phone + 1) and (max-width: $break-tablets) {
+			@content;
+		}
+	}
+	@else if $media==desktops {
+		@media only screen and (min-width: $break-tablets + 1) {
+			@content;
+		}
+	}
 }
 
 html {
-    @include respond-to(phones) {
-        font-size: 14px;
-    }
-    @include respond-to(tablets) {
-        font-size: 16px;
-    }
-    @include respond-to(desktops) {
-        font-size: 18px;
-    }
-    
+
 }
 
 body {
-    p {
-        text-align: justify;
-    }
-    h1 {
-        font-size: 2em;
-        margin-top: 1em;
-        margin-bottom: 1em;
-    }
-    h2 {
-        font-size: 1.75em;
-    }
-    h3 {
-        font-size: 1.5em;
-    }
+	@include respond-to(phones) {
+		font-size: 14px;
+	}
+	@include respond-to(tablets) {
+		font-size: 16px;
+	}
+	@include respond-to(desktops) {
+		font-size: 18px;
+	}
+
+	p {
+		text-align: justify;
+	}
+	h1 {
+		font-size: 2em;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+	h2 {
+		font-size: 1.75em;
+	}
+	h3 {
+		font-size: 1.5em;
+	}
 }
