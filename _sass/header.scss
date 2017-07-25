@@ -5,7 +5,7 @@ header {
     padding-bottom: 2em;
     
     #site-title {
-        @extend %text-center;
+        text-align: center;
         @include respond-to(phones) {
             font-size: 1.75em;
             padding-top: 0.3em;
@@ -24,7 +24,7 @@ header {
         font-family: $font-title;
     }
     #site-description {
-        @extend %text-center;
+        text-align: center;
         font-family: $font-description;
     }
 }

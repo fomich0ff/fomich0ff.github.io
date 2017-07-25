@@ -1,56 +1,66 @@
 /*
     Variables
 */
+
 $regular-text-color: #000;
 $regular-background-color: #fff;
 $outside-background-color: #e4e4e4;
 
+/* Blockqoute color palette */
+$blockquote-text-color: #5b6770;
+$blockquote-background-color: #ccd0d4;
+$blockquote-border-color: #969ea4;
+$blockquote-sign-color: #b1b7bc;
+
+$font-size: 18px;
 $break-phone: 768px;
 $break-tablets: 1200px;
 @mixin respond-to($media) {
-	@if $media==phones {
-		@media only screen and (max-width: $break-phone) {
-			@content;
-		}
-	}
-	@else if $media==tablets {
-		@media only screen and (min-width: $break-phone + 1) and (max-width: $break-tablets) {
-			@content;
-		}
-	}
-	@else if $media==desktops {
-		@media only screen and (min-width: $break-tablets + 1) {
-			@content;
-		}
-	}
+    @if $media==phones {
+        @media only screen and (max-width: $break-phone) {
+            @content;
+        }
+    }
+    @else if $media==tablets {
+        @media only screen and (min-width: $break-phone + 1) and (max-width: $break-tablets) {
+            @content;
+        }
+    }
+    @else if $media==desktops {
+        @media only screen and (min-width: $break-tablets + 1) {
+            @content;
+        }
+    }
 }
 
 body {
-	@include respond-to(phones) {
-		font-size: 14px;
-	}
-	@include respond-to(tablets) {
-		font-size: 16px;
-	}
-	@include respond-to(desktops) {
-		font-size: 18px;
-	}
+    font-size: $font-size;
+    p {
+        text-align: justify;
+    }
+    h1 {
+        font-size: 2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    h2 {
+        font-size: 1.75em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    background: $outside-background-color;
+    blockquote {
+        font-size: $font-size;
+        border-left: 5px solid $blockquote-border-color;
+        background-color: $blockquote-background-color;
+        color: $blockquote-text-color;
 
-	p {
-		text-align: justify;
-	}
-	h1 {
-		font-size: 2em;
-		margin-top: 1em;
-		margin-bottom: 1em;
-	}
-	h2 {
-		font-size: 1.75em;
-	}
-	h3 {
-		font-size: 1.5em;
-	}
-	background: $outside-background-color;
+        em {
+            color: $blockquote-sign-color;
+            text-align: right;
+        }
+    }
 }
 
 .blog {
