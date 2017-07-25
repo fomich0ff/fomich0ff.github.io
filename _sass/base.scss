@@ -25,10 +25,6 @@ $break-tablets: 1200px;
 	}
 }
 
-html {
-    
-}
-
 body {
 	@include respond-to(phones) {
 		font-size: 14px;
