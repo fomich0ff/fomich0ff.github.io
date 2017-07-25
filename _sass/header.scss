@@ -1,4 +1,5 @@
 header {
+    background-color: $regular-background-color;
     #site-title {
         @extend %text-center;
         @include respond-to(phones) {

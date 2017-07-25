@@ -1,0 +1,6 @@
+footer{
+    @extend %text-center;
+    position: absolute;
+    bottom: 0px;
+    background-color: $regular-background-color;
+}
