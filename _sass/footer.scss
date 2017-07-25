@@ -1,6 +1,6 @@
 footer {
     @extend %text-center;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     width: 100%;
     min-height: 3em;
