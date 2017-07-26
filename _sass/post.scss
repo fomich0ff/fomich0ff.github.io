@@ -8,8 +8,19 @@
     }
     .author {
         @extend %block-right;
+        color: $post-author-sign-color;
     }
     .post-date {
-        @extend %block-right;
+        @extend .author;
+    }
+}
+
+.posts{
+    .post{
+        @extend .post;
+
+        .post-date {
+            color: $regular-text-color;
+        }
     }
 }
