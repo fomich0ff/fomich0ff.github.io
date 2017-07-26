@@ -1,9 +1,8 @@
 header {
+    @extend %shadow-box;
+    border-radius: 0px;
     background-color: $regular-background-color;
-    
-    margin-bottom: 1em;
     padding-bottom: 1em;
-    
     #site-title {
         text-align: center;
         @include respond-to(phones) {
