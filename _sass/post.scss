@@ -1,4 +1,5 @@
 .post {
+    @extend %shadow-box;
     p {
         text-indent: 1em;
     }
