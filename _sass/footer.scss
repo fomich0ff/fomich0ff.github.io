@@ -3,12 +3,12 @@ footer {
     position: absolute;
     bottom: 0px;
     width: 100%;
+    min-height: 4em;
+    max-height: 5em;
     background-color: $regular-background-color;
-
     padding-top: 1em;
     padding-bottom: 1em;
-
-    #disclaimer{
+    #disclaimer {
         font-size: 0.6em;
     }
 }

@@ -44,7 +44,7 @@ $break-tablets: 1200px;
 
 body {
     font-size: $font-size;
-    padding-bottom: 4em;
+    padding-bottom: 5em;
     min-height: 100%;
     position: relative;
     @include respond-to(phones) {
