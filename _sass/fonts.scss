@@ -2,11 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&subset=cyrillic-ext');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans&subset=cyrillic-ext');
 @import url('https://fonts.googleapis.com/css?family=Rubik&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
 
 $font-comfortaa: 'Comfortaa', cursive;
 $font-ubuntu: 'Ubuntu', sans-serif;
 $font-noto-sans: 'Noto Sans', Helvetica, sans-serif;
 $font-rubik: 'Rubik', sans-serif;
+$font-bad-script: 'Bad Script', cursive;
 
 $font-title: $font-comfortaa;
 $font-description: $font-rubik;
+$font-blockquote-sign: $font-bad-script;
