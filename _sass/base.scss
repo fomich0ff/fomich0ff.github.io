@@ -17,8 +17,10 @@ $blockquote-border-color: #c7cbd0;
 $blockquote-sign-color: #5b6770;
 
 /* Post palette */
+
 $post-author-sign-color: #c7cbd0;
 $post-background-color: $regular-background-color;
+$post-divider-color: #c7cbd0;
 
 /*#b1b7bc;*/
 
@@ -94,4 +96,8 @@ body {
     color: $regular-text-color;
     line-height: 1.75em;
     font-family: $font-noto-sans;
+}
+
+.divider {
+    border-bottom: 2px solid $post-divider-color;
 }

@@ -3,21 +3,19 @@ layout: default
 ---
 
 <div id="posts">
-    {% for post in site.posts %}
-		{% if post.draft != null %}
-			<div class="post">
-				<div class="post-title">
-					<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-					<h3>{% include post-date.html %}</h3>
-				</div>
-
-				<div class="post-body">
-					{{ post.excerpt }}
-				</div>
-				<div>
-					{% include author.html %}
-				</div>
-			</div>
-		{% endif %}
-    {% endfor %}
+    {% for post in site.posts %} {% if post.draft != null %}
+    <div class="post">
+        <div class="post-title">
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        </div>
+        <div class="post-date"><span>{% include post-date.html %}</span></div>
+        <div class="divider"></div>
+        <div class="post-body">
+            {{ post.excerpt }}
+        </div>
+        <div>
+            {% include author.html %}
+        </div>
+    </div>
+    {% endif %} {% endfor %}
 </div>
