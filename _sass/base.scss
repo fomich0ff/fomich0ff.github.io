@@ -42,6 +42,10 @@ $break-tablets: 1200px;
     }
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-size: $font-size;
     padding-bottom: 5em;
@@ -84,7 +88,6 @@ body {
 
 .blog {
     color: $regular-text-color;
-
     line-height: 1.75em;
     font-family: $font-noto-sans;
 }

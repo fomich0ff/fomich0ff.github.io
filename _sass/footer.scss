@@ -1,4 +1,6 @@
 footer {
+    @extend %shadow-box;
+    border-radius: 0px;
     text-align: center;
     position: absolute;
     bottom: 0px;
