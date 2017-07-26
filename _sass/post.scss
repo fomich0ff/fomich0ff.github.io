@@ -20,7 +20,7 @@
         @extend .post;
 
         .post-date {
-            @extend h2
+            @extend h2;
             color: $regular-text-color;
         }
     }
