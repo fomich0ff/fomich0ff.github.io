@@ -3,4 +3,10 @@
         text-indent: 1em;
     }
     margin: 2em 1em;
+    .author{
+        @extend %block-right;
+    }
+    .post-date{
+        @extend %block-right;
+    }
 }

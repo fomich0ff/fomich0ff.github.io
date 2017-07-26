@@ -47,11 +47,9 @@ body {
     padding-bottom: 5em;
     min-height: 100%;
     position: relative;
+    text-align: justify;
     @include respond-to(phones) {
         font-size: $font-size - 2;
-    }
-    p {
-        text-align: justify;
     }
     h1 {
         font-size: 2em;
