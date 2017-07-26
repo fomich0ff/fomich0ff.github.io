@@ -15,8 +15,8 @@
     }
 }
 
-.posts{
-    .post-item{
+#posts{
+    .post{
         @extend .post;
 
         .post-date {
