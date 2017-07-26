@@ -10,7 +10,7 @@
         @extend %block-right;
         color: $post-author-sign-color;
     }
-    .post-date {
+    .date {
         @extend .author;
     }
 }
