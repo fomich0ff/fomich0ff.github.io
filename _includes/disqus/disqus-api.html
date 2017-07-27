@@ -13,7 +13,7 @@
             getThreadUrl += "&thread:ident=" + encodeURI(value);
         });
 
-        $.get(getThreadUrl).then((result) => {
+        $.get(getThreadUrl).then(function(result) {
             $.each(result.response, function(index, value) {
                 disqusCommentsCount[value.identifiers[0]] = value.posts;
             });
