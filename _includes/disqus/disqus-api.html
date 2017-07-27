@@ -9,12 +9,12 @@
     function getCommentsCount() {
         var getThreadUrl = disqusUrl;
 
-        $.each(disqusPostIds, (index, value) => {
+        $.each(disqusPostIds, function(index, value) {
             getThreadUrl += "&thread:ident=" + encodeURI(value);
         });
 
         $.get(getThreadUrl).then((result) => {
-            $.each(result.response, (index, value) => {
+            $.each(result.response, function(index, value) {
                 disqusCommentsCount[value.identifiers[0]] = value.posts;
             });
         });
