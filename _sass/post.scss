@@ -13,6 +13,9 @@
     .date {
         @extend .author;
     }
+	#disqus_thread {
+		margin-top: 4em;
+	}
 }
 
 #posts{
