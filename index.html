@@ -6,7 +6,7 @@ layout: default
     {% for post in site.posts %}
         {% if post.draft != null %}
             <script>
-                disqusPostIds.push("{{ post.id | replace: '/', '_'}}");
+                disqusPostIds.push("{{ post.id | replace: '/', '_' }}");
             </script>
 
             <div class="post" id="{{ post.id }}">
