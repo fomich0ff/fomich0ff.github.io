@@ -6,10 +6,10 @@ layout: default
     {% for post in site.posts %}
         {% if post.draft != null %}
             <script>
-                disqusPostIds.push("{{ post.id | replace: '/', '_' }}");
+                disqusPostIds.push("{{ post.id }}");
             </script>
 
-            <div class="post" id="{{ post.id }}">
+            <div class="post" id="{{ post.id | replace: '/', '_' }}">
                 <div class="post-header row">
                     <div class="post-title col-sm-8">
                         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
