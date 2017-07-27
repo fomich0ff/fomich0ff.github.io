@@ -2,4 +2,13 @@
     /* variables */
     var disqusPublicAPIKey = "{{ site.disqus.api_publik_key }}";
     var disqusShortName = "{{ site.disqus.shortname }}";
+    var disqusCommentsCount = [];
+    var disqusUrl = "{{site.disqus.url}}" + encodeURI(disqusShortName) + "&api_key=" + disqusPublicAPIKey;
+
+    function getCommentsCount(threadId){
+        var getThreadUrl = disqusUrl + "&thread:ident=" + encodeURI(threadId);
+        $.get(getThreadUrl).then((result)=>{
+            disqusCommentsCount[threadId] = result.response.posts;
+        });
+    }
 </script>

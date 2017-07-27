@@ -4,6 +4,10 @@ layout: default
 
 <div id="posts">
     {% for post in site.posts %} {% if post.draft != null %}
+    <script>
+        getCommentsCount("{{post.id}}")
+    </script>
+
     <div class="post">
         <div class="post-header row">
             <div class="post-title col-sm-8">

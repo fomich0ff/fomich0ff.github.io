@@ -12,3 +12,4 @@ url: https://fomich0ff.github.io
 disqus:
     shortname: fomich0ff-github-io
     api_publik_key: XrkXWYcSYFsQC74AMA9J37tNXuWbw0PwRl2DZSx3LHfu3pMJMio8Gts9qUAMBAV5
+    url: https://disqus.com/api/3.0/forums/listThreads.json?forum=
