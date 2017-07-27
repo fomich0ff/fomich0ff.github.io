@@ -1,5 +1,6 @@
 ---
 title: Первые впечатления от GitHub Pages
+comments: true
 ---
 Итак, почему же GitHub Pages?
 
