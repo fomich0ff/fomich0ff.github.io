@@ -14,7 +14,7 @@
         });
 
         $.get(getThreadUrl).then((result) => {
-            $.each(resul.response, (index, value) => {
+            $.each(result.response, (index, value) => {
                 disqusCommentsCount[value.identifiers[0]] = value.posts;
             });
         });
