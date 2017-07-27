@@ -8,7 +8,7 @@
     function getCommentsCount(threadId){
         var getThreadUrl = disqusUrl + "&thread:ident=" + encodeURI(threadId);
         $.get(getThreadUrl).then((result)=>{
-            disqusCommentsCount[threadId] = result.response.posts;
+            disqusCommentsCount[threadId] = result.response[0].posts;
         });
     }
 </script>
