@@ -4,7 +4,7 @@ layout: default
 
 <div id="posts">
     {% for post in site.posts %}
-        {% if post.draft != null %}
+        {% if post.draft != null or post.date > "now" %}
             {% assign disqusId = post.id %}
             {% assign elementId = disqusId | replace: '/', '_' %}
             
