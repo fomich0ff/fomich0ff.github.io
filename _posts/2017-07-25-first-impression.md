@@ -1,7 +1,7 @@
 ---
 title: Первые впечатления от GitHub Pages
-comments: true
 ---
+
 Итак, почему же GitHub Pages?
 
 1. Потому, что GitHub и git (со всеми его достоинствами и недостатками).
