@@ -33,7 +33,7 @@ google:
 page-navigation:
     enabled: true
     show-pointers: true
-    show-labels: true
+    show-labels: false
     show-page-titles: true
     previous:
         label: Назад к
