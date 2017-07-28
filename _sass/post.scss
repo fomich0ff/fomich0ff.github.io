@@ -29,9 +29,16 @@
 #posts{
     .post{
         @extend .post;
+	
+	    .post-title{
+	    	text-align: center;
+	    }    
 
         .date {
             @extend h2;
+	    @include respond-to(phones){
+	    	text-align: center;
+	    }
             color: $regular-text-color;
         }
     }
