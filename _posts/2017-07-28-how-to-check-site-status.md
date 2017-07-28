@@ -14,8 +14,7 @@ image-folder: /assets/images/posts/2017-07-28-how-to-check-site-status
    ```https://github.com/<username>/<username>.github.io``` (для меня это
    ```https://github.com/fomich0ff/fomich0ff.github.io```). 
 2. Дальше идем в настройки 
-
-![Настройки]({{page.image-folder}}/settings.PNG)
+   ![Настройки]({{page.image-folder}}/settings.PNG)
 3. В разделе ```Options``` находим раздел ```GitHub Pages``` и смотрим что там:
 
 Такая картинка говорит то том, что всё в порядке. Ошибок компиляции не
