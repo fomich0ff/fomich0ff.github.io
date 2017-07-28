@@ -8,7 +8,7 @@ layout: default
             {% assign disqusId = post.Id %}
             {% assign elementId = disqusId | replace: '/', '_' %}
             <script>
-                disqusPostIds.push("{ disqusId: {{ disqusId }}, elementId: {{ elementId }}");
+                disqusPostIds.push({ disqusId: {{ disqusId }}, elementId: {{ elementId }} });
             </script>
 
             <div class="post" id="{{ elementId }}">
