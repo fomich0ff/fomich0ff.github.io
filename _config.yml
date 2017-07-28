@@ -12,6 +12,7 @@ defaults:
         values:
             author: Олег Фомичёв
             comments: true
+            read-more: Дальше...
 
 excerpt_separator: <!--more-->
 permalink: pretty
