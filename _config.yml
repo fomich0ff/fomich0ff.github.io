@@ -37,7 +37,9 @@ page-navigation:
     show-page-titles: true
     previous:
         label: Назад к
-        pointer: <<
+        pointer: |
+            &laquo;
     next:
         label: Вперед к
-        pointer: >>
+        pointer: |
+            &raquo;
