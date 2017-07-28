@@ -10,12 +10,14 @@
         var getThreadUrl = disqusUrl;
 
         $.each(disqusPostIds, function(index, value) {
-            getThreadUrl += "&thread:ident=" + encodeURI(value);
+            getThreadUrl += "&thread:ident=" + encodeURI(value.disqusId);
         });
 
         $.get(getThreadUrl).then(function(result) {
             $.each(result.response, function(index, value) {
-                disqusCommentsCount[value.identifiers[0]] = value.posts;
+                var result = $.grep(disqusPostIds, function(e){ return e.disqusId == value.identifiers[0]; });
+                result[0].count = value.posts;
+                //disqusCommentsCount[value.identifiers[0]] = value.posts;
             });
         });
     }
