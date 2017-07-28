@@ -20,6 +20,12 @@ permalink: pretty
 url: https://fomich0ff.github.io
 
 disqus:
+    enabled: true
     shortname: fomich0ff-github-io
     api_publik_key: NO5WyhfWJ9szGoE6Ny2OpKqGGGjxEhWtNaq84Cx7fiYtf6nfwOuGYv2z3vX1PkuL
     url: https://disqus.com/api/3.0/forums/listThreads.json?forum=
+
+google:
+    google-analytics:
+        enabled: true
+        code: UA-38646029-3

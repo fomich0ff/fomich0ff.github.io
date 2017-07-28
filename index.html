@@ -5,12 +5,15 @@ layout: default
 <div id="posts">
     {% for post in site.posts %}
         {% if post.draft != null or post.date > "now" %}
+
             {% assign disqusId = post.id %}
             {% assign elementId = disqusId | replace: '/', '_' %}
             
-            <script>
-                disqusPostIds.push({ disqusId: "{{ disqusId }}", elementId: "{{ elementId }}" });
-            </script>
+            {% if site.disqus.enabled %}
+                <script>
+                    disqusPostIds.push({ disqusId: "{{ disqusId }}", elementId: "{{ elementId }}" });
+                </script>
+            {% endif %}
 
             <div class="post" id="{{ elementId }}">
                 <div class="post-header row">
@@ -41,6 +44,9 @@ layout: default
         {% endif %}
     {% endfor %}
 </div>
-<script>
-    getCommentsCount()
-</script>
+
+{% if site.disqus.enabled %}
+    <script>
+        getCommentsCount()
+    </script>
+{% endif %}

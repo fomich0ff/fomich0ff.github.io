@@ -1,25 +1,26 @@
-<script>
-    /* variables */
-    var disqusPublicAPIKey = "{{ site.disqus.api_publik_key }}";
-    var disqusShortName = "{{ site.disqus.shortname }}";
-    var disqusCommentsCount = [];
-    var disqusPostIds = [];
-    var disqusUrl = "{{site.disqus.url}}" + encodeURI(disqusShortName) + "&api_key=" + disqusPublicAPIKey;
+{% if site.disqus.enabled %}
+    <script>
+        /* variables */
+        var disqusPublicAPIKey = "{{ site.disqus.api_publik_key }}";
+        var disqusShortName = "{{ site.disqus.shortname }}";
+        var disqusCommentsCount = [];
+        var disqusPostIds = [];
+        var disqusUrl = "{{site.disqus.url}}" + encodeURI(disqusShortName) + "&api_key=" + disqusPublicAPIKey;
 
-    function getCommentsCount() {
-        var getThreadUrl = disqusUrl;
+        function getCommentsCount() {
+            var getThreadUrl = disqusUrl;
 
-        $.each(disqusPostIds, function(index, value) {
-            getThreadUrl += "&thread:ident=" + encodeURI(value.disqusId);
-        });
-
-        $.get(getThreadUrl).then(function(result) {
-            $.each(result.response, function(index, value) {
-                var result = $.grep(disqusPostIds, function(e){ return e.disqusId == value.identifiers[0]; });
-                result[0].count = value.posts;
-                //disqusCommentsCount[value.identifiers[0]] = value.posts;
+            $.each(disqusPostIds, function(index, value) {
+                getThreadUrl += "&thread:ident=" + encodeURI(value.disqusId);
             });
-        });
-    }
 
-</script>
+            $.get(getThreadUrl).then(function(result) {
+                $.each(result.response, function(index, value) {
+                    var result = $.grep(disqusPostIds, function(e){ return e.disqusId == value.identifiers[0]; });
+                    result[0].count = value.posts;
+                });
+            });
+        }
+
+    </script>
+{% endif %}
