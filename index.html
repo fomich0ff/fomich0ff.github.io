@@ -5,7 +5,7 @@ layout: default
 <div id="posts">
     {% for post in site.posts %}
         {% if post.draft != null %}
-            {% assign disqusId = post.Id
+            {% assign disqusId = post.Id %}
             {% assign elementId = disqusId | replace: '/', '_' %}
             <script>
                 disqusPostIds.push({ disqusId: "{{ disqusId }}", elementId: "{{ elementId }}" });
