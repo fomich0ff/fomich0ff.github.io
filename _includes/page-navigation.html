@@ -9,7 +9,7 @@
                         </span>
                     {% endif %}
                     {% if site.page-navigation.show-labels %}
-                        <span class="label">
+                        <span class="nav-label">
                             {{site.page-navigation.previous.label}}
                         </span>
                     {% endif %}
@@ -25,19 +25,19 @@
         {% if page.next.url %}
             <div class="col-sm-6">
                 <a class="next" href="{{page.next.url}}">
-                    {% if site.page-navigation.show-pointers %}
-                        <span "pointer">
-                            {{site.page-navigation.next.pointer}}
-                        </span>
-                    {% endif %}
                     {% if site.page-navigation.show-labels %}
-                        <span class="label">
+                        <span class="nav-label">
                             {{site.page-navigation.next.label}}
                         </span>
                     {% endif %}
                     {% if site.page-navigation.show-page-titles %}
                         <span class="title">
                             {{page.next.title}}
+                        </span>
+                    {% endif %}
+                    {% if site.page-navigation.show-pointers %}
+                        <span "pointer">
+                            {{site.page-navigation.next.pointer}}
                         </span>
                     {% endif %}
                 </a>
