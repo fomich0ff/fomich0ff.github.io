@@ -30,9 +30,11 @@
     .post{
         @extend .post;
 	
+	    @include respond-to(phones){
 	    .post-title{
 	    	text-align: center;
 	    }    
+	    }
 
         .date {
             @extend h2;
