@@ -2,6 +2,8 @@ title: Метод научного тыка
 description: Заметки на память и вообще...
 disclaimer: Да и хрен с ним!
 
+future: false
+
 defaults:
     -
         scope:
