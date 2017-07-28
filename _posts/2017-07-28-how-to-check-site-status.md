@@ -10,7 +10,7 @@ image-folder: /assets/images/posts/2017-07-28-how-to-check-site-status
 
 Итак, 
 
-1. идем в свой репозиторий
+1. Идем в свой репозиторий
    ```https://github.com/<username>/<username>.github.io``` (для меня это
    ```https://github.com/fomich0ff/fomich0ff.github.io```). 
 2. Дальше идем в настройки 
