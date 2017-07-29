@@ -11,7 +11,7 @@ defaults:
             type: "posts"
         values:
             author: Олег Фомичёв
-            email:o.g.fomichev@zoho.com
+            email: o.g.fomichev@zoho.com
             comments: true
             read-more: Дальше...
 
