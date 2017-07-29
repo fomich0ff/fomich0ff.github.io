@@ -1,13 +1,13 @@
 .post {
-	@include repond-to(tablets) {
+	@include respond-to(tablets) {
 		@extend %shadow-box;
 	}
-	@include repond-to(desktops) {
+	@include respond-to(desktops) {
 		@extend %shadow-box;
 	}
 	margin: 2em 0em;
 	padding: 1em 2em;
-	@include repond-to(phones) {
+	@include respond-to(phones) {
 		padding: 1em;
 		margin: 0;
 	}
