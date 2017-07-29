@@ -1,8 +1,8 @@
 {% if site.page-navigation.enabled %}
     <div class="post-nav">
-        {% if page.previous.url %}
-            <div class="col-sm-6">
-                <a class="prev" href="{{page.previous.url}}">
+		<div class="col-sm-6 col-xs-6 prev">
+        	{% if page.previous.url %}
+                <a class="prev-link" href="{{page.previous.url}}">
                     {% if site.page-navigation.show-pointers %}
                         <span "pointer">
                             {{site.page-navigation.previous.pointer}}
@@ -19,12 +19,12 @@
                         </span>
                     {% endif %}
                 </a>
-            </div>
-        {% endif %}
+        	{% endif %}
+		</div>
 
-        {% if page.next.url %}
-            <div class="col-sm-6">
-                <a class="next" href="{{page.next.url}}">
+        <div class="col-sm-6 col-xs-6 next">
+			{% if page.next.url %}
+                <a class="next-link" href="{{page.next.url}}">
                     {% if site.page-navigation.show-labels %}
                         <span class="nav-label">
                             {{site.page-navigation.next.label}}
@@ -41,7 +41,7 @@
                         </span>
                     {% endif %}
                 </a>
-            </div>
-        {% endif %}
+			{% endif %}
+		</div>
     </div>
 {% endif %}
