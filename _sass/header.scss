@@ -1,4 +1,5 @@
 header {
+	@extend %shadow-box;
 	border-radius: 0px;
 	background-color: $regular-background-color;
 	padding-bottom: 1em;
@@ -24,17 +25,5 @@ header {
 	#site-description {
 		text-align: center;
 		font-family: $font-description;
-	}
-}
-
-@include respond-to(tablets) {
-	header {
-		@extend %shadow-box;
-	}
-}
-
-@include respond-to(desktops) {
-	header {
-		@extend %shadow-box;
 	}
 }

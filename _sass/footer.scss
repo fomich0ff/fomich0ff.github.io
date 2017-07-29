@@ -1,4 +1,5 @@
 footer {
+	@extend %shadow-box;
 	border-radius: 0px;
 	text-align: center;
 	position: absolute;
@@ -11,17 +12,5 @@ footer {
 	padding-bottom: 1em;
 	#disclaimer {
 		font-size: 0.6em;
-	}
-}
-
-@include respond-to(tablets) {
-	footer {
-		@extend %shadow-box;
-	}
-}
-
-@include respond-to(desktops) {
-	footer {
-		@extend %shadow-box;
 	}
 }
