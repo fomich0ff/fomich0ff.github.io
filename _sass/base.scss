@@ -76,7 +76,7 @@ body {
 	}
 	background-color: $outside-background-color;
 	@include respond-to(phones) {
-		background-color: $regular-background-color:
+		background-color: $regular-background-color;
 	}
 	blockquote {
 		font-size: $font-size;
