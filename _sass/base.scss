@@ -74,7 +74,10 @@ body {
 	h3 {
 		font-size: 1.25em;
 	}
-	background: $outside-background-color;
+	background-color: $outside-background-color;
+	@include respond-to(phones) {
+		background-color: $regular-background-color:
+	}
 	blockquote {
 		font-size: $font-size;
 		font-family: $font-blockquote-text;
