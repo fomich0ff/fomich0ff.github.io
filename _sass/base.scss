@@ -114,6 +114,7 @@ body {
 	}
 	.prev-link {
 		display: inline-block;
+		padding: 1em 0 2em;
 	}
 	.next-link {
 		@extend .prev-link;
