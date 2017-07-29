@@ -6,7 +6,7 @@ header {
 	#site-title {
 		text-align: center;
 		@include respond-to(phones) {
-			font-size: 1.75em;
+			font-size: 1.7em;
 			padding-top: 0.3em;
 			padding-bottom: 0.3em;
 		}
