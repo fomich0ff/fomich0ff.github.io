@@ -3,7 +3,7 @@
 	margin: 2em 0em;
 	padding: 1em 2em;
 	@include respond-to(phones) {
-		padding: 1em;
+		padding: 0;
 		margin: 0;
 	}
 	background-color: $regular-background-color;
