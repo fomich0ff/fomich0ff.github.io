@@ -1,5 +1,10 @@
 header {
-    @extend %shadow-box;
+    @include repond-to(tablets) {
+		@extend %shadow-box;
+	}
+	@include repond-to(desktops) {
+		@extend %shadow-box;
+	}
     border-radius: 0px;
     background-color: $regular-background-color;
     padding-bottom: 1em;

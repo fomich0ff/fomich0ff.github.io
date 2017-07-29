@@ -1,7 +1,16 @@
 .post {
-	@extend %shadow-box;
+	@include repond-to(tablets) {
+		@extend %shadow-box;
+	}
+	@include repond-to(desktops) {
+		@extend %shadow-box;
+	}
 	margin: 2em 0em;
 	padding: 1em 2em;
+	@include repond-to(phones) {
+		padding: 1em;
+		margin: 0;
+	}
 	background-color: $regular-background-color;
 	p {
 		text-indent: 1em;
@@ -41,7 +50,5 @@
 			}
 			color: $regular-text-color;
 		}
-
-
 	}
 }

@@ -1,5 +1,10 @@
 footer {
-    @extend %shadow-box;
+    @include repond-to(tablets) {
+		@extend %shadow-box;
+	}
+	@include repond-to(desktops) {
+		@extend %shadow-box;
+	}
     border-radius: 0px;
     text-align: center;
     position: absolute;
