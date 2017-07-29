@@ -1,34 +1,40 @@
 header {
-    @include respond-to(tablets) {
+	border-radius: 0px;
+	background-color: $regular-background-color;
+	padding-bottom: 1em;
+	#site-title {
+		text-align: center;
+		@include respond-to(phones) {
+			font-size: 1.75em;
+			padding-top: 0.3em;
+			padding-bottom: 0.3em;
+		}
+		@include respond-to(tablets) {
+			font-size: 1.75em;
+			padding-top: 0.3em;
+			padding-bottom: 0.3em;
+		}
+		@include respond-to(desktops) {
+			font-size: 2em;
+			padding-top: 0.5em;
+			padding-bottom: 0em;
+		}
+		font-family: $font-title;
+	}
+	#site-description {
+		text-align: center;
+		font-family: $font-description;
+	}
+}
+
+@include respond-to(tablets) {
+	header {
 		@extend %shadow-box;
 	}
-	@include respond-to(desktops) {
+}
+
+@include respond-to(desktops) {
+	header {
 		@extend %shadow-box;
 	}
-    border-radius: 0px;
-    background-color: $regular-background-color;
-    padding-bottom: 1em;
-    #site-title {
-        text-align: center;
-        @include respond-to(phones) {
-            font-size: 1.75em;
-            padding-top: 0.3em;
-            padding-bottom: 0.3em;
-        }
-        @include respond-to(tablets) {
-            font-size: 1.75em;
-            padding-top: 0.3em;
-            padding-bottom: 0.3em;
-        }
-        @include respond-to(desktops) {
-            font-size: 2em;
-            padding-top: 0.5em;
-            padding-bottom: 0em;
-        }
-        font-family: $font-title;
-    }
-    #site-description {
-        text-align: center;
-        font-family: $font-description;
-    }
 }

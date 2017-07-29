@@ -1,10 +1,16 @@
+@include respond-to(tablets) {
+	.post {
+		@extend %shadow-box;
+	}
+}
+
+@include respond-to(desktops) {
+	.post {
+		@extend %shadow-box;
+	}
+}
+
 .post {
-	@include respond-to(tablets) {
-		@extend %shadow-box;
-	}
-	@include respond-to(desktops) {
-		@extend %shadow-box;
-	}
 	margin: 2em 0em;
 	padding: 1em 2em;
 	@include respond-to(phones) {
