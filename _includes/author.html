@@ -2,13 +2,13 @@
 	{% if post.author %}
 		{% assign author = post.author %}
 	{% else %}
-		{% assign author = site.author %}
+		{% assign author = page.author %}
 	{% endif %}
 
 	{% if post.email %}
 		{% assign email = post.email %}
 	{% else %}
-		{% assign email = site.email %}
+		{% assign email = page.email %}
 	{% endif %}
 
 	{% if email %}
