@@ -90,16 +90,14 @@ published: true
         <link href="https://fomich0ff.github.io/2017/08/04/how-to-add-atom-feed/" />
         <updated>2017-08-04T00:00:00+00:00</updated>
         <id>https://fomich0ff.github.io/2017/08/04/how-to-add-atom-feed</id>
-        <content type="html"></content>
+        <content type="html">  тут содержимое статьи  </content>
     </entry>
     <entry>
         <title>Привет из прошлого</title>
         <link href="https://fomich0ff.github.io/2017/08/01/post-from-future/" />
         <updated>2017-08-01T00:00:00+00:00</updated>
         <id>https://fomich0ff.github.io/2017/08/01/post-from-future</id>
-        <content type="html">
-            <p>По-молчанию <a href="https://jekyllrb.com">Jekyll</a> публикует все посты, находящиеся в папке <code class="highlighter-rouge">_posts</code>. Для того, чтобы спрятать все отложенные посты надо в конфигурационном файле <code class="highlighter-rouge">_config.yml</code> указать опцию <code class="highlighter-rouge">future: false</code> и будет вам счастье.</p> <p>Этот пост написан 28 Июля 2017 г. и будет опубликован 1 Августа 2017 г.</p> <p>Привет из прошлого в будущее!</p> <p><strong>UPD:</strong> Выяснилось, что GitHub Pages (впрочем как и Jekyl) не обновляет сайт ежедневно, а только при очередном комите. Получается, что чтобы отложенный пост был опубликован надо в день публикации что-нибудь в репозиторий пропихнуть. Ну что ж, будем думать.</p>
-        </content>
+        <content type="html">  тут содержимое статьи  </content>
     </entry>
     ...
 </feed>{% endraw %}
