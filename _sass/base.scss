@@ -83,9 +83,14 @@ body {
     }
     blockquote {
         font-size: $font-size;
-
+        color: $blockquote-text-color;
         .great-man-quote {
             font-family: $font-blockquote-text;
+            border-left: 5px solid $blockquote-border-color;
+            border-right: 1px solid $blockquote-border-color;
+            border-bottom: 1px solid $blockquote-border-color;
+            border-top: 1px solid $blockquote-border-color;
+            background-color: $blockquote-background-color;
             em {
                 color: $blockquote-sign-color;
                 text-align: right;
@@ -94,8 +99,6 @@ body {
                 font-style: normal;
             }
         }
-
-        color: $blockquote-text-color;
     }
 }
 
