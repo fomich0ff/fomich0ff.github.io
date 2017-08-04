@@ -2,9 +2,6 @@ title: Метод научного тыка
 description: Заметки на память и вообще...
 disclaimer: Ура!
 
-gems:
-  - jekyll-feed
-
 future: false
 
 defaults:
