@@ -62,3 +62,45 @@ published: true
     ```
 
 Ну и, конечно, никто не запрещает посмотреть как это сделано у [меня](https://github.com/fomich0ff/fomich0ff.github.io)
+
+##Как проверить, что всё работает
+
+Для этого достаточно открыть ваш сайт и в конце добавить ```/atom.xml```. Для
+меня эта ссылка выглядит вот так
+[https://fomich0ff.github.io/atom.xml](https://fomich0ff.github.io/atom.xml) В
+зависимости от браузера и установленных плагинов конечный результат может
+выглядеть по-разному. Но в любом случае это должен быть список ваших постов с
+их содержимым в виде ```XML```.
+
+Пример:
+
+```xml{% raw %}
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Метод научного тыка</title>
+    <link href="https://fomich0ff.github.io/atom.xml" rel="self" />
+    <link href="https://fomich0ff.github.io" />
+    <updated>2017-08-04T16:54:13+00:00</updated>
+    <id>https://fomich0ff.github.io</id>
+    <author>
+        <name>Олег Фомичёв</name>
+        <email>o.g.fomichev@zoho.com</email>
+    </author>
+    <entry>
+        <title>Как добавит Atom feed в свой блог</title>
+        <link href="https://fomich0ff.github.io/2017/08/04/how-to-add-atom-feed/" />
+        <updated>2017-08-04T00:00:00+00:00</updated>
+        <id>https://fomich0ff.github.io/2017/08/04/how-to-add-atom-feed</id>
+        <content type="html"></content>
+    </entry>
+    <entry>
+        <title>Привет из прошлого</title>
+        <link href="https://fomich0ff.github.io/2017/08/01/post-from-future/" />
+        <updated>2017-08-01T00:00:00+00:00</updated>
+        <id>https://fomich0ff.github.io/2017/08/01/post-from-future</id>
+        <content type="html">
+            <p>По-молчанию <a href="https://jekyllrb.com">Jekyll</a> публикует все посты, находящиеся в папке <code class="highlighter-rouge">_posts</code>. Для того, чтобы спрятать все отложенные посты надо в конфигурационном файле <code class="highlighter-rouge">_config.yml</code> указать опцию <code class="highlighter-rouge">future: false</code> и будет вам счастье.</p> <p>Этот пост написан 28 Июля 2017 г. и будет опубликован 1 Августа 2017 г.</p> <p>Привет из прошлого в будущее!</p> <p><strong>UPD:</strong> Выяснилось, что GitHub Pages (впрочем как и Jekyl) не обновляет сайт ежедневно, а только при очередном комите. Получается, что чтобы отложенный пост был опубликован надо в день публикации что-нибудь в репозиторий пропихнуть. Ну что ж, будем думать.</p>
+        </content>
+    </entry>
+    ...
+</feed>{% endraw %}
+```
