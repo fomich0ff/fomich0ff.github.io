@@ -1,3 +1,5 @@
+/*--- post.scss ---*/
+
 .post {
     @extend %shadow-box;
     margin: 2em 0em;
@@ -10,6 +12,7 @@
     background-color: $regular-background-color;
     p {
         text-indent: 1em;
+        margin: 1em 0;
     }
     .author {
         @extend %block-right;
