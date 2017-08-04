@@ -104,12 +104,6 @@ body {
 
 .blog {
     color: $regular-text-color;
-    @include respond-to(tablets) {
-        line-height: 1.75em;
-    }
-    @include respond-to(desktops) {
-        line-height: 1.75em;
-    }
     font-family: $font-noto-sans;
 }
 
