@@ -16,36 +16,35 @@ published: true
 
 Что нам понадобится:
 
-1. Необходимо в корне своего GitHub Pages репозитория создать файл ```atom.xml``` вот с таким содержимым:{% raw %}
+1. Необходимо в корне своего GitHub Pages репозитория создать файл ```atom.xml``` вот с таким содержимым:
 ```HTML
 ---
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>{{ site.title }}</title>
- <link href="{{ site.url }}/atom.xml" rel="self"/>
- <link href="{{ site.url }}"/>
- <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>{{ site.url }}</id>
+ <title>&#123;&#123; site.title }}</title>
+ <link href="&#123;&#123; site.url }}/atom.xml" rel="self"/>
+ <link href="&#123;&#123; site.url }}"/>
+ <updated>&#123;&#123; site.time | date_to_xmlschema }}</updated>
+ <id>&#123;&#123; site.url }}</id>
  <author>
-   <name>{{ site.author }}</name>
-   <email>{{ site.email }}</email>
+   <name>&#123;&#123; site.author }}</name>
+   <email>&#123;&#123; site.email }}</email>
  </author>
 
- {% for post in site.posts %}
+ &#123;% for post in site.posts %}
  <entry>
-   <title>{{ post.title }}</title>
-   <link href="{{ site.url }}{{ post.url }}"/>
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>{{ site.url }}{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
+   <title>&#123;&#123; post.title }}</title>
+   <link href="&#123;&#123; site.url }}{{ post.url }}"/>
+   <updated>&#123;&#123; post.date | date_to_xmlschema }}</updated>
+   <id>&#123;&#123; site.url }}{{ post.id }}</id>
+   <content type="html">&#123;&#123; post.content | xml_escape }}</content>
  </entry>
- {% endfor %}
+ &#123;% endfor %}
 
 </feed>
 ```
-{% endraw %}
 2. В секцию ```head``` надо вставить ссылку на вновь созданный файл:{% raw %}
 ```HTML
 <head>
