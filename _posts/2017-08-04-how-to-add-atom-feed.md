@@ -46,8 +46,10 @@ published: true
 
 </feed>
 ```
+{% endraw %}
 
 2. В секцию ```head``` надо вставить ссылку на вновь созданный файл:
+{% raw %}
 ```HTML
 <head>
     ...
@@ -55,6 +57,7 @@ published: true
     ...
 </head>
 ```
+{% endraw %}
 
 3. Добавить/обновить файл конфигурации ```_config.yml```
 ```YAML
@@ -65,6 +68,5 @@ author: Василий Алибабаевич Али-Баба
 email: vasya@somewhere.com
 ...
 ```
-{% endraw %}
 
 Ну и, конечно, никто не запрещает посмотреть как это сделано у [меня](https://github.com/fomich0ff/fomich0ff.github.io)
