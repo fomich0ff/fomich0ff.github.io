@@ -3,6 +3,7 @@ title: Как добавит Atom feed в свой блог
 tags: [jekyll, github]
 published: true
 ---
+{% raw %}
 Обратимся к [Wikipedia](https://ru.wikipedia.org/wiki/Atom) для начала:
 
 **Atom** — общее название двух связанных веб-технологий: формата для описания ресурсов на веб-сайтах и протокола для их публикации.
@@ -16,9 +17,7 @@ published: true
 Что нам понадобится:
 
 1. Необходимо в корне своего GitHub Pages репозитория создать файл ```atom.xml``` вот с таким содержимым:
-
 ```HTML
-{% raw %}
 ---
 ---
 <?xml version="1.0" encoding="utf-8"?>
@@ -45,11 +44,9 @@ published: true
  {% endfor %}
 
 </feed>
-{% endraw %}
 ```
 
 2. В секцию ```head``` надо вставить ссылку на вновь созданный файл:
-
 ```HTML
 <head>
     ...
@@ -59,7 +56,6 @@ published: true
 ```
 
 3. Добавить/обновить файл конфигурации ```_config.yml```
-
 ```YAML
 ...
 title: Заголовок сайта
@@ -70,3 +66,4 @@ email: vasya@somewhere.com
 ```
 
 Ну и, конечно, никто не запрещает посмотреть как это сделано у [меня](https://github.com/fomich0ff/fomich0ff.github.io)
+{% endraw %}
