@@ -17,7 +17,7 @@ published: true
 
 1. Необходимо в корне своего GitHub Pages репозитория создать файл ```atom.xml``` вот с таким содержимым:
 
-```HTML
+~~~HTML
 ---
 ---
 <?xml version="1.0" encoding="utf-8"?>
@@ -44,7 +44,7 @@ published: true
  {% endfor %}
 
 </feed>
-```
+~~~
 
 2. В секцию ```head``` надо вставить ссылку на вновь созданный файл:
 
