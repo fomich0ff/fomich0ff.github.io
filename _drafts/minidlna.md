@@ -14,6 +14,7 @@ sudo apt install minidlna
 
 ```shell
 wget http://sourceforge.net/projects/minidlna/files/minidlna/1.1.2/minidlna-1.1.2.tar.gz
+https://downloads.sourceforge.net/project/minidlna/minidlna/1.2.0/minidlna-1.2.0.tar.gz
 ```
 
 ```shell
