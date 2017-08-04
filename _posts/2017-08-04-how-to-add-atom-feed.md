@@ -16,8 +16,8 @@ published: true
 
 Что нам понадобится:
 
-1. Необходимо в корне своего GitHub Pages репозитория создать файл ```atom.xml``` вот с таким содержимым:
-
+1. Необходимо в корне своего GitHub Pages репозитория создать файл
+   ```atom.xml``` вот с таким содержимым:
   ```HTML
   ---
   ---
@@ -46,23 +46,23 @@ published: true
   {% endraw %}
   </feed>
   ```
-2. В секцию ```head``` надо вставить ссылку на вновь созданный файл:{% raw %}
-```HTML
-<head>{% raw %}
-    ...
-    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/atom.xml">
-    ...
-</head>{% endraw %}
-```
+2. В секцию ```head``` надо вставить ссылку на вновь созданный файл:
+    ```HTML
+    <head>{% raw %}
+        ...
+        <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/atom.xml">
+        ...
+    </head>{% endraw %}
+    ```
 
 3. Добавить/обновить файл конфигурации ```_config.yml```
-```YAML
-...
-title: Заголовок сайта
-url: https://<your-user>.github.io
-author: Василий Алибабаевич Али-Баба
-email: vasya@somewhere.com
-...
-```
+    ```YAML
+    ...
+    title: Заголовок сайта
+    url: https://<your-user>.github.io
+    author: Василий Алибабаевич Али-Баба
+    email: vasya@somewhere.com
+    ...
+    ```
 
 Ну и, конечно, никто не запрещает посмотреть как это сделано у [меня](https://github.com/fomich0ff/fomich0ff.github.io)
