@@ -3,7 +3,7 @@ description: Заметки на память и вообще...
 disclaimer: Ура!
 
 gems:
-  - jekyll-feed
+  - jekyll-rss
 
 future: false
 
