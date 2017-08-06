@@ -13,6 +13,7 @@ defaults:
             author: Олег Фомичёв
             email: o.g.fomichev@zoho.com
             comments: true
+            layout: post
             read-more: Дальше...
 
 excerpt_separator: <!--more-->
