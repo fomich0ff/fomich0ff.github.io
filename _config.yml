@@ -1,6 +1,6 @@
 title: Метод научного тыка
 description: Заметки на память и вообще...
-disclaimer: Да и хрен с ним!
+disclaimer: Ура!
 
 future: false
 
@@ -11,8 +11,9 @@ defaults:
             type: "posts"
         values:
             author: Олег Фомичёв
-            email: o.g.fomichev@zoho.com
+            email: fomich0ff.github.io@gmail.com
             comments: true
+            layout: post
             read-more: Дальше...
 
 excerpt_separator: <!--more-->

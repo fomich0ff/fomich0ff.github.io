@@ -12,7 +12,7 @@
 	{% endif %}
 
 	{% if email %}
-		<a href="mailto:{{ email }}"> {{ author }}</a>
+		<a href="mailto:{{ email }}?subject={{ page.title }}" class="email"><i class="fa fa-envelope-o" aria-hidden="true"></i> {{ author }}</a>
 	{% else %}
 		{{ author }}
 	{% endif %}

@@ -32,97 +32,106 @@ $font-size: 18px;
 $break-phone: 768px;
 $break-tablets: 1200px;
 @mixin respond-to($media) {
-	@if $media==phones {
-		@media only screen and (max-width: $break-phone - 1) {
-			@content;
-		}
-	}
-	@else if $media==tablets {
-		@media only screen and (min-width: $break-phone) and (max-width: $break-tablets - 1) {
-			@content;
-		}
-	}
-	@else if $media==desktops {
-		@media only screen and (min-width: $break-tablets) {
-			@content;
-		}
-	}
+    @if $media==phones {
+        @media only screen and (max-width: $break-phone - 1) {
+            @content;
+        }
+    }
+    @else if $media==tablets {
+        @media only screen and (min-width: $break-phone) and (max-width: $break-tablets - 1) {
+            @content;
+        }
+    }
+    @else if $media==desktops {
+        @media only screen and (min-width: $break-tablets) {
+            @content;
+        }
+    }
 }
 
 html {
-	height: 100%;
+    height: 100%;
 }
 
 body {
-	font-size: $font-size;
-	padding-bottom: 4em;
-	min-height: 100%;
-	position: relative;
-	text-align: justify;
-	@include respond-to(phones) {
-		font-size: $font-size - 2;
+    font-size: $font-size;
+    padding-bottom: 4em;
+    min-height: 100%;
+    position: relative;
+    text-align: justify;
+    @include respond-to(phones) {
+        font-size: $font-size - 2;
+    }
+    h1 {
+		@extend %h;
+        font-size: 1.75em;
+        
+    }
+    h2 {
+		@extend h1;
+        font-size: 1.5em;
+        @include respond-to(phones) {
+            font-size: 1.3em;
+        }
+        margin-top: 2em;
+    }
+    h3 {
+		@extend h1;
+        font-size: 1.25em;
+    }
+	h4{
+		@extend h1;
+		font-size: 1em;
 	}
-	h1 {
-		font-size: 1.75em;
-		margin-top: 1em;
-		margin-bottom: 1em;
-	}
-	h2 {
-		font-size: 1.5em;
-		@include respond-to(phones) {
-			font-size: 1.3em;
-		}
-		margin-top: 0.5em;
-	}
-	h3 {
-		font-size: 1.25em;
-	}
-	background-color: $outside-background-color;
-	@include respond-to(phones) {
-		background-color: $regular-background-color;
-	}
-	blockquote {
-		font-size: $font-size;
-		font-family: $font-blockquote-text;
-		border-left: 5px solid $blockquote-border-color;
-		border-right: 1px solid $blockquote-border-color;
-		border-bottom: 1px solid $blockquote-border-color;
-		border-top: 1px solid $blockquote-border-color;
-		background-color: $blockquote-background-color;
-		color: $blockquote-text-color;
-		em {
-			color: $blockquote-sign-color;
-			text-align: right;
-			display: block;
-			font-family: $font-blockquote-sign;
-			font-style: normal;
-		}
-	}
+	
+	
+    background-color: $outside-background-color;
+    @include respond-to(phones) {
+        background-color: $regular-background-color;
+    }
+    blockquote {
+        font-size: $font-size;
+        color: $blockquote-text-color;
+        &.great-man-quote {
+            font-family: $font-blockquote-text;
+            border-left: 5px solid $blockquote-border-color;
+            border-right: 1px solid $blockquote-border-color;
+            border-bottom: 1px solid $blockquote-border-color;
+            border-top: 1px solid $blockquote-border-color;
+            background-color: $blockquote-background-color;
+            .quote-sign {
+                color: $blockquote-sign-color;
+                text-align: right;
+                display: block;
+                font-family: $font-blockquote-sign;
+                font-style: normal;
+            }
+        }
+    }
 }
 
 .blog {
-	color: $regular-text-color;
-	line-height: 1.75em;
-	font-family: $font-noto-sans;
+    color: $regular-text-color;
+    font-family: $font-noto-sans;
 }
 
 .divider {
-	border-bottom: 2px solid $post-divider-color;
-	margin: 2em 0em;
+    border-bottom: 2px solid $post-divider-color;
+    margin: 2em 0em;
 }
 
 .post-nav {
-	padding: 2em 0 1em;
-	.prev {
-		text-align: left;
-	}
-	.next {
-		text-align: right
-	}
-	.prev-link {
-		display: inline-block;
-	}
-	.next-link {
-		@extend .prev-link;
-	}
+    padding: 2em 0 1em;
+    .prev {
+        text-align: left;
+    }
+    .next {
+        text-align: right
+    }
+    .prev-link {
+        display: inline-block;
+    }
+    .next-link {
+        @extend .prev-link;
+    }
 }

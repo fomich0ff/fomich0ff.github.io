@@ -22,11 +22,7 @@ layout: default
                     </div>
                     <div class="post-date col-sm-4"><span>{% include date.html %}</span></div>
                 </div>
-                <div class="row">
-                    <div class="comments col-sm-2"></div>
-                    <div class="tags col-sm-6"></div>
-                    <div class="categories col-sm-6"></div>
-                </div>
+                {% include tag-bar.html %}
                 <div class="divider"></div>
                 <div class="post-body">
                     {{ post.excerpt }}

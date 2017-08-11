@@ -1,49 +1,63 @@
 .post {
-	@extend %shadow-box;
-	margin: 2em 0em;
-	padding: 1em 2em;
-	@include respond-to(phones) {
-		padding: 0;
-		margin: 0;
-	}
-	background-color: $regular-background-color;
-	p {
-		text-indent: 1em;
-	}
-	.author {
-		@extend %block-right;
-		color: $post-author-sign-color;
-	}
-	.date {
-		@extend .author;
-	}
-	#disqus_thread {
-		margin-top: 4em;
-	}
-	img {
-		border: 1px solid $post-image-border-color;
-		padding: 0.5em;
-		margin: 2em auto;
-		display: block;
-		max-width: 100%;
-		height: auto;
-	}
+    @extend %shadow-box;
+    margin: 2em 0em;
+    padding: 1em 2em;
+    @include respond-to(phones) {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 2em;
+    }
+    background-color: $regular-background-color;
+    p {
+        text-indent: 1em;
+        margin: 1em 0;
+    }
+    .author {
+        @extend %block-right;
+        color: $post-author-sign-color;
+        a {
+            color: $post-author-sign-color;
+        }
+    }
+    .date {
+        @extend .author;
+    }
+    #disqus_thread {
+        margin-top: 4em;
+    }
+    img {
+        border: 1px solid $post-image-border-color;
+        padding: 0.5em;
+        margin: 2em auto;
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    .post-header {
+        @include respond-to(phones) {
+            text-align: center;
+        }
+    }
+
+    pre {
+        font-size: 0.75em;
+    }
 }
 
 #posts {
-	.post {
-		@extend .post;
-		@include respond-to(phones) {
-			.post-title {
-				text-align: center;
-			}
-		}
-		.date {
-			@extend h2;
-			@include respond-to(phones) {
-				text-align: center;
-			}
-			color: $regular-text-color;
-		}
-	}
+    .post {
+        @extend .post;
+        @include respond-to(phones) {
+            .post-title {
+                text-align: center;
+            }
+        }
+        .date {
+            @extend h2;
+            @include respond-to(phones) {
+                text-align: center;
+            }
+            color: $regular-text-color;
+        }
+    }
 }
