@@ -63,11 +63,11 @@ body {
         font-size: $font-size - 2;
     }
     h1 {
+        @extend %h;
         font-size: 1.75em;
-        margin-top: 1em;
-        margin-bottom: 1em;
     }
     h2 {
+        @extend h1;
         font-size: 1.5em;
         @include respond-to(phones) {
             font-size: 1.3em;
@@ -75,7 +75,12 @@ body {
         margin-top: 2em;
     }
     h3 {
+        @extend h1;
         font-size: 1.25em;
+    }
+    h4 {
+        @extend h1;
+        font-size: 1em;
     }
     background-color: $outside-background-color;
     @include respond-to(phones) {
