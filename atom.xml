@@ -10,7 +10,7 @@
  <id>{{ site.url }}</id>
  <author>
    <name>Олег Фомичёв</name>
-   <email>o.g.fomichev@zoho.com</email>
+   <email>fomich0ff.github.io@gmail.com</email>
  </author>
 
  {% for post in site.posts %}
