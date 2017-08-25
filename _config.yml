@@ -5,6 +5,10 @@ disclaimer: Ура!
 
 highlighter: none
 
+kramdown: 
+  syntax_highlighter_opts:
+    disable : true
+
 future: true
 
 defaults:
