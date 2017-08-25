@@ -1,6 +1,5 @@
 ---
 title: Я что-то нажал и...
-image-folder: /assets/images/posts/2017-07-28-how-to-check-site-status
 ---
 
 Вот обнаружилась интересная возможность определить всё ли хорошо с сайтом (речь,
@@ -14,28 +13,27 @@ image-folder: /assets/images/posts/2017-07-28-how-to-check-site-status
 1. Идем в свой репозиторий
    ```https://github.com/<username>/<username>.github.io``` (для меня это
    ```https://github.com/fomich0ff/fomich0ff.github.io```). 
-2. Дальше идем в настройки 
-   ![Настройки]({{page.image-folder}}/settings.PNG)
+2. Дальше идем в настройки {% include image.html src="settings.PNG" alt="Настройки" %}
 3. В разделе ```Options``` находим раздел ```GitHub Pages``` и смотрим что там:
 
 Такая картинка говорит то том, что всё в порядке. Ошибок компиляции не
 найдено. 
 
-![Ошибок не найдено]({{page.image-folder}}/done.PNG) 
+{% include image.html src="done.PNG" alt="Ошибок не найдено" %}
 
 Это конечно же не значит, что ошибок нет совсем, но по крайней мере сайт отобразится 
 вместе с последними изменениями.
 
 Если видите вот это: 
 
-![В процессе компиляции]({{page.image-folder}}/compiling.PNG) 
+{% include image.html src="compiling.PNG" alt="В процессе компиляции" %}
 
 то стало быть сейчас сайт в процессе компиляции и надо подождать немного завершения
 этой процедуры
 
 Ну а если увидели вот это: 
 
-![Ошибка]({{page.image-folder}}/error.PNG) 
+{% include image.html src="error.PNG" alt="Ошибка" %}
 
 то стало быть есть серьёзные ошибки в разметке (в моём случае неправильный код Liquid).
 Сайт не "упадёт". Он всё так же будет доступен, но это будет предыдущая

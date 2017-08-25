@@ -1,7 +1,6 @@
 ---
 title: Как установить Jekyll локально.
 bash-prompt: 'user@localhost:~$'
-image-folder: /assets/images/posts/2017-08-05-install-jekyll-locally
 ---
 
 Это хорошая идея установить Jekyll локально на своей машине/сервере
@@ -125,7 +124,7 @@ Configuration file: /home/user/cool-site/_config.yml
 Итак, открываем браузер. Вводим адрес нашего сервера ```http://<адрес-сервера>:4000```
 и получаем свой сайт.
 
-![Главная страница]({{page.image-folder}}/site.png)
+{% include image.html src="site.png" alt="Главная страница" %}
 
-![Пост]({{page.image-folder}}/post.png)
+{% include image.html src="post.png" alt="Пост" %}
 
