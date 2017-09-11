@@ -1,7 +1,6 @@
 ---
 title: Как подружить Jekyll с systemd
 tags: [jekyll, ubuntu, systemd]
-read-more: Обсудить...
 ---
 
 Это просто!

@@ -1,0 +1,8 @@
+<div class="info">
+	<span class="date">{% include date.html data=include.data %}</span>
+	<span class="author">{% include author.html data=include.data%}</span>
+    {% if include.data.comments %}
+	   <span class="comments"><a class="disqus-comments-count" href="{{ include.data.url | prepend: site.url }}#disqus_thread">{{site.disqus.nocomments}}</a></span>
+    {% endif %}
+	<div class="tags">{% include post/tags.html data=include.data %}</div>
+</div>

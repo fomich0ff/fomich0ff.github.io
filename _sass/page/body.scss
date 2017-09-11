@@ -1,0 +1,29 @@
+body {
+    color: $color-text;
+    background-color: $color-background;
+    font-size: 16px;
+    font-family: $font-noto-sans;
+	position: relative;
+	min-height: 100%;
+
+    #pagination {
+        text-align: center;
+        padding: 2em 0;
+        color: $color-post-info;
+        #prev {
+            display: inline-block;
+            font-size: 2em;
+            vertical-align: middle;
+            width: 2em;
+        }
+        #next {
+            @extend #prev;
+        }
+        #info {
+            display: inline-block;
+            font-size: 0.75em;
+            margin: 0 2em;
+            vertical-align: middle;
+        }
+    }
+}

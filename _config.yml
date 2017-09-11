@@ -1,7 +1,11 @@
 title: Метод научного тыка
 description: Заметки на память и вообще...
-disclaimer: Ура!
+disclaimer: "Всё, что находится в этом блоге является результатом различных экспериментов и умозаключений автора, а также компиляцией информации из различных источников. Вся информация представлена как есть и не является истиной в последней инстанции. Более того часть ее могла устареть (и наверняка давно это сделала). Использование информации из этого блога разрешается даже без указания авторства. Всё в народ! Но помните: с двенадцатым ударом... ой, не про то... вы используете полученную здесь информацию на свой страх и риск."
 
+plugins:
+    - jekyll-paginate
+
+paginate: 5
 
 highlighter: none
 
@@ -21,7 +25,8 @@ defaults:
             email: fomich0ff.github.io@gmail.com
             comments: true
             layout: post
-            read-more: Дальше...
+            read-more: |
+                Читать далее &raquo;
 
 excerpt_separator: <!--more-->
 permalink: pretty
@@ -31,8 +36,7 @@ url: https://fomich0ff.github.io
 disqus:
     enabled: true
     shortname: fomich0ff-github-io
-    api-publik-key: NO5WyhfWJ9szGoE6Ny2OpKqGGGjxEhWtNaq84Cx7fiYtf6nfwOuGYv2z3vX1PkuL
-    url: https://disqus.com/api/3.0/forums/listThreads.json?forum=
+    nocomments: тишина...
 
 google:
     google-analytics:
@@ -52,3 +56,6 @@ page-navigation:
         label: Вперед к
         pointer: |
             &raquo;
+pagination:
+    prev: Предыдущая страница
+    next: Следующая страница

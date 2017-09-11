@@ -1,0 +1,22 @@
+<div class="body">
+	{% if include.index %}
+		{% if include.data.excerpt != include.data.content %}
+            <div class="excerpt">
+                {{ include.data.excerpt }}
+				<span class="read-more">
+					<a href="{{ include.data.url }}">
+						{% if include.data.read-more %}
+							{{ include.data.read-more }}
+						{% else %}
+							<i class="fa fa-ellipsis-h"></i>
+						{% endif %}
+					</a>
+                </span>
+            </div>
+        {% else %}
+            {{ include.data.excerpt }}
+		{% endif %}
+	{% else %}
+        {{ include.data.content }}
+	{% endif %}
+</div>

@@ -1,9 +1,5 @@
 <span class="date">
-  {% if post %}
-    {% assign article_date = post.date %}
-  {% else %}
-    {% assign article_date = page.date %}
-  {% endif %}
+  {% assign article_date = include.data.date %}
 
   {% assign m = article_date | date: "%-m" %}
   {{ article_date | date: "%-d" }}

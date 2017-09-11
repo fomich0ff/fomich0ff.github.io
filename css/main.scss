@@ -2,9 +2,20 @@
 # Main stylesheet
 ---
 
-@import 'fonts';
-@import 'base';
-@import 'elements';
-@import 'header';
+@import 'html';
+@import 'basic/fonts';
+
+@import 'basic/utils';
+
+
+@import 'basic/colors';
+@import 'basic/elements';
+
+@import 'page/body';
+@import 'page/header';
+@import 'page/blog';
+@import 'page/footer';
+
+
 @import 'post';
-@import 'footer';
+

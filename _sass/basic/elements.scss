@@ -1,0 +1,23 @@
+img {
+	max-width: 100%;
+	height: auto;
+	padding: 10px;
+	display: block;
+    margin: 0 auto;
+}
+
+a {
+	color: $color-links;
+	&:hover {
+		color: darken($color-links, 20%);
+		text-decoration: none;
+	}
+}
+
+@for $index from 1 through 4 {
+	h#{$index} {
+		margin-top: 2em + 1/$index;
+		font-family: $font-title;
+		font-size: 2em + 1/$index;
+	}
+}

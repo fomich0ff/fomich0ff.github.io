@@ -1,0 +1,18 @@
+<!-- Pagination links -->
+{% if paginator.total_pages > 1 %}
+<div id="pagination">
+    <span id="prev">
+    {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" title="{{ site.pagination.prev }}"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></a>
+    {% endif %}
+    </span>
+
+    <span id="info">Страница {{ paginator.page }} из {{ paginator.total_pages }} </span>
+
+    <span id="next">
+    {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" title="{{ site.pagination.next }}"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+    {% endif %}
+    </span>
+</div>
+{% endif %}

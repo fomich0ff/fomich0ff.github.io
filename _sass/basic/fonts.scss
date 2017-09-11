@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Bad+Script');
 @import url('https://fonts.googleapis.com/css?family=Marck+Script');
+@import url('https://fonts.googleapis.com/css?family=Neucha');
 
 $font-comfortaa: 'Comfortaa', cursive;
 $font-ubuntu: 'Ubuntu', sans-serif;
@@ -11,9 +12,11 @@ $font-noto-sans: 'Noto Sans', Helvetica, sans-serif;
 $font-rubik: 'Rubik', sans-serif;
 $font-bad-script: 'Bad Script', cursive;
 $font-marck-script: 'Marck Script', cursive;
+$font-neucha: 'Neucha',cursive;
+$font-fontawesome: 'FontAwesome';
 
-$font-title: $font-comfortaa;
-$font-description: $font-rubik;
+$font-title: $font-neucha;
+$font-description: $font-comfortaa;
 $font-blog-text: $font-noto-sans;
 $font-blockquote-sign: $font-marck-script;
 $font-blockquote-text: $font-bad-script;

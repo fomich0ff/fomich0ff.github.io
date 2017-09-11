@@ -1,18 +1,14 @@
 <span class="author">
-	{% if post.author %}
-		{% assign author = post.author %}
-	{% else %}
-		{% assign author = page.author %}
+	{% if include.data.author %}
+		{% assign author = include.data.author %}
 	{% endif %}
 
-	{% if post.email %}
-		{% assign email = post.email %}
-	{% else %}
-		{% assign email = page.email %}
+	{% if include.data.email %}
+		{% assign email = include.data.email %}
 	{% endif %}
 
 	{% if email %}
-		<a href="mailto:{{ email }}?subject={{ page.title }}" class="email"><i class="fa fa-envelope-o" aria-hidden="true"></i> {{ author }}</a>
+		<a href="mailto:{{ email }}?subject={{ page.title }}" class="email">{{ author }}</a>
 	{% else %}
 		{{ author }}
 	{% endif %}
