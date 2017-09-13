@@ -9,7 +9,7 @@ img {
 a {
 	color: $color-links;
 	&:hover {
-		color: darken($color-links, 20%);
+		color: darken($color-links, 10%);
 		text-decoration: none;
 	}
 }

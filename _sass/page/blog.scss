@@ -1,6 +1,9 @@
 .blog{
-    padding-bottom: 15rem;
+    padding-bottom: 20rem;
 	@include respond-to(phones){
+		padding-bottom: 30rem;
+	}
+    @include respond-to(tablets){
 		padding-bottom: 25rem;
 	}
 }

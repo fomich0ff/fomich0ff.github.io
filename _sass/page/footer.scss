@@ -1,17 +1,24 @@
-footer{
+footer {
     color: lighten($color-post-info, 10%);
     font-size: 0.75em;
-	position: absolute;
-	right: 0;
-	left: 0;
-	bottom: 0px;
-	padding: 1rem;
-
-    #disclaimer{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0px;
+    padding: 1rem;
+    #disclaimer {
         margin-top: 4em;
-        margin-bottom: 2em;
         text-align: center;
-        padding-left: 2.5em;
-        padding-right: 2.5em;
+    }
+    a {
+        color: lighten($color-post-info, 10%);
+        text-decoration: underline dashed;
+    }
+    .button {
+        color: lighten($color-post-info, 10%);
+        font-size: 3em;
+        &:hover {
+            color: darken($color-post-info, 10%);
+        }
     }
 }
