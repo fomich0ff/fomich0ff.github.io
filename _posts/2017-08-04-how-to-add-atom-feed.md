@@ -1,7 +1,6 @@
 ---
 title: Как добавить Atom feed в свой блог
 tags: [jekyll, github]
-published: true
 ---
 
 Обратимся к [Wikipedia](https://ru.wikipedia.org/wiki/Atom) для начала:

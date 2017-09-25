@@ -16,8 +16,14 @@ a {
 
 @for $index from 1 through 4 {
 	h#{$index} {
-		margin-top: 2em + 1/$index;
+		margin-top: 1em + 1/$index;
 		font-family: $font-title;
 		font-size: 2em + 1/$index;
 	}
+}
+
+pre {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 1em;
 }
