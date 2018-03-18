@@ -9,7 +9,7 @@ plugins:
 
 paginate: 5
 
-highlighter: none
+highlighter: rouge
 
 kramdown: 
   syntax_highlighter_opts:
@@ -28,7 +28,7 @@ defaults:
             comments: true
             layout: post
             read-more: |
-                Читать далее &raquo;
+                Читать полностью &raquo;
 
 excerpt_separator: <!--more-->
 permalink: pretty
