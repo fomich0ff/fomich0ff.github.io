@@ -1,7 +1,11 @@
-html{
+html {
     height: 100%;
 }
 
-kbd{
+kbd {
     text-transform: uppercase;
+    background: $color-background;
+    color: $color-orange;
+    border: 1px solid $color-orange;
+    box-shadow: inset 0 -1px 0 lighten($color-orange, 10%);
 }
