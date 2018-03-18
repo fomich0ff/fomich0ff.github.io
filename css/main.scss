@@ -1,13 +1,5 @@
----
-# Main stylesheet
----
-
-
 @import 'basic/fonts';
-
 @import 'basic/utils';
-
-
 @import 'basic/colors';
 @import 'basic/elements';
 
@@ -15,7 +7,6 @@
 @import 'page/header';
 @import 'page/blog';
 @import 'page/footer';
-
 
 @import 'post';
 @import 'html';
