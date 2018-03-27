@@ -29,6 +29,7 @@ defaults:
             layout: post
             read-more: |
                 Читать полностью &raquo;
+            read-speed: 120 # number of words read in one minute
 
 excerpt_separator: <!--more-->
 permalink: pretty
@@ -38,7 +39,7 @@ url: https://fomich0ff.github.io
 disqus:
     enabled: true
     shortname: fomich0ff-github-io
-    nocomments: тишина...
+    nocomments: 0
 
 google:
     google-analytics:

@@ -1,0 +1,16 @@
+{% if include.data.read-speed %}
+  {% assign readSpeed = include.data.read-speed %}
+{% endif %}
+  
+{% capture words %} 
+  {{ include.data.content | number_of_words | minus: readSpeed }} 
+{% endcapture %} 
+
+<span title="Вермя чтения">
+  <i class="far fa-clock" aria-hidden="true"></i>
+    {% unless words contains "-" %} 
+      {{ words | plus: readSpeed | divided_by: readSpeed | append: " мин."}}
+    {% else %}
+      < 1 мин.
+    {% endunless %}
+</span>
