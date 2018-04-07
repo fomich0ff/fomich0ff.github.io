@@ -39,7 +39,7 @@ tags: [virtualbox,meltdown]
     ...
     deb http://download.virtualbox.org/virtualbox/debian xenial contrib
     ```
-    Не забудьте версию своего дистрибутива вместо ```xenial```
+    Не забудьте вставить версию своего дистрибутива вместо ```xenial```
 3. Добавляем ключ для проверки репозитория
     ```bash
     wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
