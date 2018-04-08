@@ -1,7 +1,6 @@
 ---
 title: Как сменить раскладку по Ctrl+Shift
 tags: [budgie,settings,gnome]
-#read-more: Обсудить &raquo;
 ---
 
 А вот поставили вы набирающий нынче популярность [Ubuntu Budgie](https://ubuntubudgie.org/).
