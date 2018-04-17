@@ -23,5 +23,5 @@ tags: [viber,linux,mac]
 3. Перезапускаем Viber и наслаждаемся чистотой интерфейса
 
 Ровно такой же подход должен сработать и в отношении Windows
-(файл ```https://github.com/fomich0ff/fomich0ff.github.io.git```), 
+(файл ```C:\Windows\System32\Drivers\etc\hosts```), 
 но за неимением оной подтвердить это не могу.
