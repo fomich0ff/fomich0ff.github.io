@@ -9,7 +9,7 @@ tags: [viber,linux,mac]
 Эта проблема решается очень просто.
 <!--more-->
 
-1. Открываем ```hosts`` файл
+1. Открываем ```hosts``` файл
    ```bash
    sudo nano /etc/hosts
    ```
