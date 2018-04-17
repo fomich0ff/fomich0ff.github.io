@@ -1,11 +1,17 @@
 <div class="header">
 	{% if include.index %}
+	<div class="post-title">
 		<a href="{{ include.data.url }}">
 			<h2 class="title">{{ include.data.title }}</h2>
 		</a>
-	{% else %}
-        <h2 class="title">{{ include.data.title }}</h2>
-	{% endif %}
-
-	{% include post/info.html data=include.data %}
+	</div>
+	{%if include.data.subtitle %}
+	<div class="post-subtitle">{{include.data.subtitle}}</div>
+	{%endif%} {% else %}
+	<div class="post-title">
+		<h2 class="title">{{ include.data.title }}</h2>
+	</div>
+	{%if include.data.subtitle %}
+	<div class="post-subtitle">{{include.data.subtitle}}</div>
+	{%endif%} {% endif %} {% include post/info.html data=include.data %}
 </div>

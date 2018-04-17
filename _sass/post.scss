@@ -6,6 +6,12 @@
             margin-top: 1em;
             margin-bottom: 0px;
         }
+        .post-subtitle {
+            font-family: $font-title;
+            font-size: 1.3em;
+            color: lighten(black, 50%);
+            margin-bottom: 1em;
+        }
         .info {
             font-size: 0.75em;
             margin-bottom: 2em;
