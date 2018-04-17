@@ -21,3 +21,7 @@ tags: [viber,linux,mac]
    127.0.0.1 ads-d.viber.com
    ```
 3. Перезапускаем Viber и наслаждаемся чистотой интерфейса
+
+Ровно такой же подход должен сработать и в отношении Windows
+(файл ```https://github.com/fomich0ff/fomich0ff.github.io.git```), 
+но за неимением оной подтвердить это не могу.
