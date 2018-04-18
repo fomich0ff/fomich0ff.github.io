@@ -9,8 +9,11 @@
         .post-subtitle {
             font-family: $font-title;
             font-size: 1.3em;
-            color: lighten(black, 50%);
+            color: $color-post-info;
             margin-bottom: 1em;
+            &.single{
+                color: lighten($color: #000000, $amount: 50%);
+            }
         }
         .info {
             font-size: 0.75em;
