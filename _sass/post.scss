@@ -10,7 +10,7 @@
             font-family: $font-title;
             font-size: 1.3em;
             color: $color-post-info;
-            margin-bottom: 1em;
+            margin-bottom: 0.5em;
             &.single{
                 color: lighten($color: #000000, $amount: 50%);
             }
