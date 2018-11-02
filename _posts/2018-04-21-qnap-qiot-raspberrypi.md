@@ -1,6 +1,7 @@
 ---
 title: Как начать работать с QNAP QIoT Suite
 tags: [qnap,qiot,raspberrypi,iot]
+published: false
 ---
 
 ## Raspberry Pi
