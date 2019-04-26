@@ -1,36 +1,49 @@
 {% if site.page-navigation.enabled %}
     <div class="post-nav row">
-        <div class="col-sm-6 col-xs-6 next">
-            {% if page.next.url %}
-                <a class="next-link" href="{{page.next.url}}">
-                    {% if site.page-navigation.show-labels %}
-                        <span class="nav-label">{{site.page-navigation.next.label}}</span>
-                    {% endif %}
-                    {% if site.page-navigation.show-page-titles %}
-                        <span class="title">{{page.next.title}}</span>
-                    {% endif %}
-                    {% if site.page-navigation.show-pointers %}
-                        <span "pointer">{{site.page-navigation.next.pointer}}</span>
-                    {% endif %}
-                </a>
-            {% endif %}
-        </div>
-        <div class="col-sm-6 col-xs-6 prev">
-            {% if page.previous.url %}
+		<div class="col-sm-6 col-xs-6 prev">
+        	{% if page.previous.url %}
                 <a class="prev-link" href="{{page.previous.url}}">
                     {% if site.page-navigation.show-pointers %}
-                        <span "pointer">{{site.page-navigation.previous.pointer}}</span>
+                        <span "pointer">
+                            {{site.page-navigation.previous.pointer}}
+                        </span>
                     {% endif %}
                     {% if site.page-navigation.show-labels %}
-                        <span class="nav-label">{{site.page-navigation.previous.label}}</span>
+                        <span class="nav-label">
+                            {{site.page-navigation.previous.label}}
+                        </span>
                     {% endif %}
                     {% if site.page-navigation.show-page-titles %}
-                        <span class="title">{{page.previous.title}}</span>
+                        <span class="title">
+                            {{page.previous.title}}
+                        </span>
                     {% endif %}
                 </a>
-            {% else %}
-                &nbsp;
-            {% endif %}
-        </div>
+			{% else %}
+				&nbsp;
+        	{% endif %}
+		</div>
+
+        <div class="col-sm-6 col-xs-6 next">
+			{% if page.next.url %}
+                <a class="next-link" href="{{page.next.url}}">
+                    {% if site.page-navigation.show-labels %}
+                        <span class="nav-label">
+                            {{site.page-navigation.next.label}}
+                        </span>
+                    {% endif %}
+                    {% if site.page-navigation.show-page-titles %}
+                        <span class="title">
+                            {{page.next.title}}
+                        </span>
+                    {% endif %}
+                    {% if site.page-navigation.show-pointers %}
+                        <span "pointer">
+                            {{site.page-navigation.next.pointer}}
+                        </span>
+                    {% endif %}
+                </a>
+			{% endif %}
+		</div>
     </div>
 {% endif %}
