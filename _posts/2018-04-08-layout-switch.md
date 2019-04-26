@@ -32,7 +32,7 @@ sudo apt install dconf-editor
 
 А дальше нам нужен следующий ключ:
 
-``` bash
+```bash
 /org/gnome/desktop/wm/keybindings/switch-input-source
 ```
 
