@@ -23,8 +23,7 @@ a {
 }
 
 pre {
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 0.5em;
     font-size: 1em;
-    /*border: 1px solid $color-orange;*/
+    border: 1px solid $color-orange;
 }
